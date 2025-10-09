@@ -6,7 +6,7 @@ export default function Footer1() {
            
         <footer className="site-footer">
             <div className="site-footer__shape-1 float-bob-x">
-                <img src="assets/images/shapes/footer-shape-1.png" alt=""/>
+                <img src="assets/images/shapes/footer-shape-four.png" alt=""/>
             </div>
             <div className="container">
                 <div className="site-footer__top">
@@ -14,12 +14,11 @@ export default function Footer1() {
                         <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div className="footer-widget__column footer-widget__about">
                                 <div className="footer-widget__logo">
-                                    <Link href="/"><img src="assets/images/resources/footer-logo-1.png"
+                                    <Link href="/"><img src="assets/images/resources/logo-1.png"
                                             alt=""/></Link>
                                 </div>
-                                <p className="footer-widget__about-text">Secure other greater pleasures, or else he
-                                    endures<br/>
-                                    pains to avoid worse pains to the selection point.<br/> But in certain circumstances
+                                <p className="footer-widget__about-text">Trabajamos para ofrecerte soluciones confiables <br/> y eficientes en energía solar y bombeo hidráulico, 
+                                garantizando <br/> el máximo rendimiento y la tranquilidad de una instalación segura.
                                 </p>
                                 <div className="site-footer__social">
                                     <Link href="#"><i className="icon-facebook"></i></Link>
@@ -32,15 +31,14 @@ export default function Footer1() {
                         <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div className="footer-widget__column footer-widget__usefull-link">
                                 <div className="footer-widget__title-box">
-                                    <h3 className="footer-widget__title">Our Company</h3>
+                                    <h3 className="footer-widget__title">Nosotros</h3>
                                 </div>
                                 <div className="footer-widget__link-box">
                                     <ul className="footer-widget__link list-unstyled">
-                                        <li><Link href="/">Home</Link></li>
-                                        <li><Link href="about">About Us</Link></li>
-                                        <li><Link href="services">Services</Link></li>
-                                        <li><Link href="blog">Blog</Link></li>
-                                        <li><Link href="contact">Contact</Link></li>
+                                        <li><Link href="/">Inicio</Link></li>
+                                        <li><Link href="about">Quienes Somos</Link></li>
+                                        <li><Link href="services">Servicios</Link></li>
+                                        <li><Link href="contact">contacto</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -48,7 +46,7 @@ export default function Footer1() {
                         <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                             <div className="footer-widget__column footer-widget__services">
                                 <div className="footer-widget__title-box">
-                                    <h3 className="footer-widget__title">Our Service</h3>
+                                    <h3 className="footer-widget__title">Servicios</h3>
                                 </div>
                                 <ul className="footer-widget__link list-unstyled">
                                     <li><Link href="electric-panel-repair">Electric Repair</Link></li>
@@ -62,20 +60,20 @@ export default function Footer1() {
                         <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div className="footer-widget__column footer-widget__contact">
                                 <div className="footer-widget__title-box">
-                                    <h3 className="footer-widget__title">Contact us</h3>
+                                    <h3 className="footer-widget__title">Contácto</h3>
                                 </div>
                                 <ul className="footer-widget__contact-list list-unstyled">
                                     <li>
-                                        <h3>Address</h3>
+                                        <h3>Correo</h3>
                                         <div className="content">
-                                            <p>2972 Westheimer Rd. Santa <br/> Ana, Illinois 8548 </p>
+                                        <p><Link href="mailto:example@gmail.com">rodher@gmail.com</Link></p>
                                         </div>
                                     </li>
                                     <li>
-                                        <h3>Contact</h3>
+                                        <h3>Teléfono</h3>
                                         <div className="content">
-                                            <p><Link href="tel:8528525285505">+85 2852 5285 505</Link></p>
-                                            <p><Link href="mailto:example@gmail.com">example@gmail.com</Link></p>
+                                            <p><Link href="tel:8528525285505">+52 999 900 1393</Link></p>
+                                            
                                         </div>
                                     </li>
                                 </ul>
@@ -87,11 +85,10 @@ export default function Footer1() {
             <div className="site-footer__bottom">
                 <div className="container">
                     <div className="site-footer__bottom-inner">
-                        <p className="site-footer__bottom-text">Copyright 2024. All rights reserved</p>
+                        <p className="site-footer__bottom-text">Rodher Ingeniería 2025. Todos los derechos reservados</p>
                         <ul className="list-unstyled site-footer__bottom-menu">
-                            <li><Link href="contact">Support</Link></li>
-                            <li><Link href="about">Terms and Condition</Link></li>
-                            <li><Link href="about">Privacy and Policy</Link></li>
+                            <li><Link href="about">Términos y Condiciones</Link></li>
+                            <li><Link href="about">Pólitica de Privacidad</Link></li>
                         </ul>
                     </div>
                 </div>

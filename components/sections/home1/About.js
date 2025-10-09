@@ -16,7 +16,7 @@ export default function About() {
                                 <div className="col-xl-6">
                                     <div className="about-one__img-box-1">
                                         <div className="about-one__img-1">
-                                            <img src="assets/images/resources/about-one-img-1.jpg" alt=""/>
+                                            <img src="assets/images/resources/nosotros-1.png" alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -25,11 +25,11 @@ export default function About() {
                                         <div className="icon">
                                             <span className="icon-certified"></span>
                                         </div>
-                                        <h3>We are certified<br/> company since 1997</h3>
+                                        <h3>Distribuidor<br/> autorizado</h3>
                                     </div>
                                     <div className="about-one__img-box-2">
                                         <div className="about-one__img-2">
-                                            <img src="assets/images/resources/about-one-img-2.jpg" alt=""/>
+                                            <img src="assets/images/resources/nosotros-2.png" alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -40,27 +40,22 @@ export default function About() {
                         <div className="about-one__right wow fadeInRight" data-wow-delay="300ms">
                             <div className="section-title text-left">
                                 <div className="section-title__tagline-box">
-                                    <span className="section-title__tagline">Get To Know Us</span>
+                                    <span className="section-title__tagline">Conócenos</span>
                                 </div>
                                 <div className="section-title__title-box sec-title-animation animation-style2">
-                                    <h2 className="section-title__title title-animation">General Auto Repair & Car This
-                                        Maintenance
-                                        Place
+                                    <h2 className="section-title__title title-animation">Conoce RODHER Ingeniería
                                     </h2>
                                 </div>
                             </div>
-                            <p className="about-one__text-1">The wise
-                                man therefore always holds in these
-                                matters to this
-                                principle of selection. He rejects pleasures to secure other greater pleasures, or else
-                                he endures pains to avoid worse pains to the selection point. But in certain
-                                circumstances</p>
-                            <p className="about-one__text-2">Duis acute arura dolor in reprehenderit in voluptate velit esse
-                                cillum dolore Velit esse quam nihil molestiae consequatur, Velia ease chillum dolore eu
-                                fugato nullar partiture. Exception sint occaecatvel qui dolorem eum fugiat quo quail
-                                dolor sit amen, consectetur, </p>
+                                <p className="about-one__text-1">RODHER Ingeniería fue constituida en el año 2017 con la 
+                                    finalidad de brindar un servicio integral y profesional a sistemas municipales de agua potable, 
+                                    fraccionadores, contratistas, constructoras, hoteles, industria en general y cualquier usuario 
+                                    de equipos de desinfección, bombeo, seguridad, paneles solares, detección de fugas de agua potable, 
+                                    ahorro de energía, equipos para albercas, purificación de agua y automatización de procesos dentro
+                                     del centro y sureste del país.</p>
+                            <p className="about-one__text-2">  </p>
                             <div className="about-one__btn-box">
-                                <Link href="about" className="about-one__btn thm-btn">About Us More</Link>
+                                <Link href="about" className="about-one__btn thm-btn">Más sobre nosotros</Link>
                             </div>
                         </div>
                     </div>

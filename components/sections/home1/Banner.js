@@ -41,25 +41,25 @@ export default function Banner() {
                 <SwiperSlide>
                 <div className="item">
                     <div className="main-slider__bg"
-                        style={{ backgroundImage: 'url(assets/images/backgrounds/slider-1-1.jpg)' }} >
+                        style={{ backgroundImage: 'url(assets/images/backgrounds/paneles-solares.png)' }} >
                     </div>{/* /.slider-one__bg */}
                     <div className="main-slider__shape-1"></div>
                     <div className="main-slider__shape-2"></div>
                     <div className="main-slider__shape-3"></div>
-                    <div className="main-slider__img">
-                        <img src="assets/images/resources/main-slider-img-1-1.png" alt=""/>
-                    </div>
+                    {/* <div className="main-slider__img">
+                        <img src="assets/images/resources/paneles-solares-instalacion.png" alt=""/>
+                    </div> */}
                     <div className="container">
                         <div className="main-slider__content">
                             <div className="main-slider__sub-title-box">
-                                <p className="main-slider__sub-title">Service Company</p>
+                                <p className="main-slider__sub-title">Soluciones Energéticas y de Bombeo</p>
                                 <div className="main-slider__sub-title-shape"></div>
                             </div>
-                            <h2 className="main-slider__title">Bright Solutions <br/> for Dark Problems</h2>
-                            <p className="main-slider__text">We have been operating for over a decade, providing top-notch
-                                sWe have <br/> operating over a decade, providing top-notch services to our clients</p>
+                            <h2 className="main-slider__title">RODHER Ingeniería<br/> Energía Solar y<br/>Equipo de Bombeo</h2>
+                            <p className="main-slider__text">Expertos en la venta e instalación de paneles solares y equipos de bombeo
+                                <br/> Ofrecemos soluciones eficientes, sustentables y a la medida de tus necesidades.</p>
                             <div className="main-slider__btn-box">
-                                <Link href="about" className="main-slider__btn thm-btn">Learn More</Link>
+                                <Link href="about" className="main-slider__btn thm-btn">Conoce más</Link>
                             </div>
                         </div>
                     </div>

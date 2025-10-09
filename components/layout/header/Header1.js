@@ -18,7 +18,7 @@ export default function Header2({ scroll, handleMobileMenu }) {
                                 <Link href="#"><i className="icon-link-in"></i></Link>
                                 <Link href="#"><i className="icon-instagram"></i></Link>
                             </div>
-                            <p className="main-menu-two__text">Proyectos con Paneles Solares y equipos de Bombeo</p>
+                            <p className="main-menu-two__text">Proyectos con Paneles Solares y Equipos de Bombeo</p>
                         </div>
                         <ul className="list-unstyled main-menu-two__contact-list">
                             <li>
@@ -34,7 +34,7 @@ export default function Header2({ scroll, handleMobileMenu }) {
                                     <i className="icon-envelope"></i>
                                 </div>
                                 <div className="text">
-                                    <p><Link href="mailto:rodher@gamil.com">rodher@gamil.com</Link>
+                                    <p><Link href="mailto:rodher@gamil.com">rodher@gmail.com</Link>
                                     </p>
                                 </div>
                             </li>
