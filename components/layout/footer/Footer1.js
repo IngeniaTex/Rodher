@@ -37,7 +37,7 @@ export default function Footer1() {
                                     <ul className="footer-widget__link list-unstyled">
                                         <li><Link href="/">Inicio</Link></li>
                                         <li><Link href="about">Quienes Somos</Link></li>
-                                        <li><Link href="services">Servicios</Link></li>
+                                        <li><Link href="#">Servicios</Link></li>
                                         <li><Link href="contact">contacto</Link></li>
                                     </ul>
                                 </div>
@@ -48,13 +48,13 @@ export default function Footer1() {
                                 <div className="footer-widget__title-box">
                                     <h3 className="footer-widget__title">Servicios</h3>
                                 </div>
-                                <ul className="footer-widget__link list-unstyled">
+                                {/* <ul className="footer-widget__link list-unstyled">
                                     <li><Link href="electric-panel-repair">Electric Repair</Link></li>
                                     <li><Link href="lighting-fixtures">Lighting & Fixture</Link></li>
                                     <li><Link href="maintenance-service">European Lard Sration</Link></li>
                                     <li><Link href="maintenance-service">Electric Maintenance</Link></li>
                                     <li><Link href="installing-ceiling-fan">Colling Service</Link></li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
