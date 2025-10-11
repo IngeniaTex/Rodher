@@ -72,9 +72,7 @@ export default function Testimonial() {
                                 <div className="testimonial-one__quote">
                                     <span className="icon-quote"></span>
                                 </div>
-                                <p className="testimonial-one__text">“Adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labored etos dolore magna aliquant. Ut enim ad minim veniam nostrud exercitation
-                                    ullamco laboris nisi ut aliquip</p>
+                                <p className="testimonial-one__text">“Gracias a RODHER bajamos nuestra factura eléctrica y ahora generamos nuestra propia energía."</p>
                                 <div className="testimonial-one__ratting">
                                     <span className="fas fa-star"></span>
                                     <span className="fas fa-star"></span>
@@ -83,8 +81,8 @@ export default function Testimonial() {
                                     <span className="fas fa-star"></span>
                                 </div>
                                 <div className="testimonial-one__client-info">
-                                    <h3><Link href="testimonials">Arlene McCoy</Link></h3>
-                                    <p>Co-founder</p>
+                                    <h3><Link href="testimonials">Cliente residencial</Link></h3>
+                                    <p>Manager</p>
                                 </div>
                             </div>
                         </div>
@@ -102,9 +100,7 @@ export default function Testimonial() {
                                 <div className="testimonial-one__quote">
                                     <span className="icon-quote"></span>
                                 </div>
-                                <p className="testimonial-one__text">“Adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labored etos dolore magna aliquant. Ut enim ad minim veniam nostrud exercitation
-                                    ullamco laboris nisi ut aliquip</p>
+                                <p className="testimonial-one__text">“El equipo de bombeo instalado es eficiente y su mantenimiento es inmediato cuando lo necesitamos.”</p>
                                 <div className="testimonial-one__ratting">
                                     <span className="fas fa-star"></span>
                                     <span className="fas fa-star"></span>
@@ -113,7 +109,7 @@ export default function Testimonial() {
                                     <span className="fas fa-star"></span>
                                 </div>
                                 <div className="testimonial-one__client-info">
-                                    <h3><Link href="testimonials">Wade Warrent</Link></h3>
+                                    <h3><Link href="testimonials">Cliente industrial</Link></h3>
                                     <p>Manager</p>
                                 </div>
                             </div>

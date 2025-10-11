@@ -9,20 +9,13 @@ export default function Menu() {
         <>
 
             <ul className="main-menu__list">
-                <li className="dropdown">
-                    <Link href="/">Home </Link>
-                    <ul>
-                        <li><Link href="/">Home One</Link></li>
-                        <li><Link href="index2">Home Two</Link></li>
-                        <li><Link href="index3">Home Three</Link></li>
-                        <li><Link href="index-dark">Home Dark</Link></li>
-                        
-                    </ul>
+                <li>
+                    <Link href="/">Inicio </Link>
                 </li>
                 <li>
-                    <Link href="about">About Us</Link>
+                    <Link href="about">Nosotros</Link>
                 </li>
-                <li className="dropdown">
+                 {/* <li className="dropdown">
                     <Link href="#">Pages</Link>
                     <ul>
                         <li><Link href="team">Team</Link></li>
@@ -39,44 +32,46 @@ export default function Menu() {
                         <li><Link href="faq">Faq</Link></li>
                         <li><Link href="404">404 Error</Link></li>
                     </ul>
-                </li>
+                </li>  */}
                 <li className="dropdown">
-                    <Link href="#">Services</Link>
+                    <Link href="#">Servicios</Link>
                     <ul>
-                        <li><Link href="services">Services</Link></li>
-                        <li><Link href="electric-panel-repair">Electric Panel Repair</Link></li>
-                        <li><Link href="short-circuit-repair">Short Circuit Repair</Link>
+                        <li className="dropdown">
+                            <Link href="#">División Paneles Solares</Link>
+                            <ul>
+                                <li><Link href="#">Venta e Instalación</Link></li>
+                                <li><Link href="#">Mantenimiento y monitoreo</Link></li>
+                                <li><Link href="#">Asesoría y servicio post venta</Link></li>
+                            </ul>
                         </li>
-                        <li><Link href="commercial-services">Commercial Services</Link>
+                        <li className="dropdown">
+                            <Link href="#">División Equipos de Bombeo</Link>
+                            <ul>
+                                <li><Link href="#">Venta e Instalación</Link></li>
+                                <li><Link href="#">Sistemas de cloro gas hipoclorito</Link></li>
+                                <li><Link href="#">Bombas sumergibles</Link></li>
+                                <li><Link href="#">Mantenimiento</Link></li>
+
+                            </ul>
                         </li>
-                        <li><Link href="installing-ceiling-fan">Installing A Ceiling Fan</Link>
-                        </li>
-                        <li><Link href="lighting-fixtures">Lighting A Fixtures</Link>
-                        </li>
-                        <li><Link href="maintenance-service">Maintenance Service</Link></li>
                     </ul>
                 </li>
                 <li className="dropdown">
-                    <Link href="#">Shop</Link>
+                <Link href="#">Productos</Link>
                     <ul>
-                        <li><Link href="shop">Products</Link></li>
+                        <li><Link href="#">Residencial</Link></li>
+                        <li><Link href="#">Comercial</Link></li>
+                        <li><Link href="#">Industrial</Link></li>
+                        {/* <li><Link href="shop">Products</Link></li>
                         <li><Link href="shop-details">Products Details</Link></li>
                         <li><Link href="cart">Cart</Link></li>
                         <li><Link href="checkout">Checkout</Link></li>
                         <li><Link href="wishlist">Wishlist</Link></li>
-                        <li><Link href="account">My Account</Link></li>
-                    </ul>
-                </li>
-                <li className="dropdown">
-                    <Link href="#">Blog</Link>
-                    <ul>
-                        <li><Link href="blog">Blog</Link></li>
-                        <li><Link href="blog-list">Blog List</Link></li>
-                        <li><Link href="blog-details">Blog Details</Link></li>
+                        <li><Link href="account">My Account</Link></li> */}
                     </ul>
                 </li>
                 <li>
-                    <Link href="contact">Contact</Link>
+                    <Link href="contact">Contacto</Link>
                 </li>
             </ul>
         </>

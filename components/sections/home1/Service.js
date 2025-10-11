@@ -12,10 +12,8 @@ export default function Service() {
                                 <div className="services-one__icon">
                                     <span className="icon-affordable-price"></span>
                                 </div>
-                                <h3 className="services-one__title"><Link href="pricing">Affordable Price</Link></h3>
-                                <p className="services-one__text">The wise man therefore always holds in <br/>these matters
-                                    to this
-                                    principle of </p>
+                                <h3 className="services-one__title"><Link href="pricing">Inversión Inteligente</Link></h3>
+                                <p className="services-one__text">Diseñamos soluciones eficientes y rentables <br/> pensadas para tu hogar o negocio.<br/> Ahorra désde el primer día.</p>
                             </div>
                         </li>
                         <li className="wow fadeInUp" data-wow-delay="200ms">
@@ -23,10 +21,8 @@ export default function Service() {
                                 <div className="services-one__icon">
                                     <span className="icon-setting"></span>
                                 </div>
-                                <h3 className="services-one__title"><Link href="about">100% Guarantee</Link></h3>
-                                <p className="services-one__text">The wise man therefore always holds in <br/>these matters
-                                    to this
-                                    principle of </p>
+                                <h3 className="services-one__title"><Link href="about">Garantía del 100%</Link></h3>
+                                <p className="services-one__text">Cada sistema solar y equipo de bombeo <br/>que instalamos cuenta con garantía completa, ofreciéndote tranquilidad <br/>y soporte técnico especializado.</p>
                             </div>
                         </li>
                         <li className="wow fadeInRight" data-wow-delay="300ms">
@@ -34,10 +30,9 @@ export default function Service() {
                                 <div className="services-one__icon">
                                     <span className="icon-services"></span>
                                 </div>
-                                <h3 className="services-one__title"><Link href="contact">24/7 Our Service</Link></h3>
-                                <p className="services-one__text">The wise man therefore always holds in <br/>these matters
-                                    to this
-                                    principle of </p>
+                                <h3 className="services-one__title"><Link href="contact">Servicio personalizado</Link></h3>
+                                <p className="services-one__text">Nuestro equipo está siempre disponible <br/>para atender tus necesidades y resolver cualquier incidencia de forma <br/>rápida y eficaz, sin importar la hora.
+                                </p>
                             </div>
                         </li>
                     </ul>
