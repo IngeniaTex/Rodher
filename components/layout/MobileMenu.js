@@ -38,64 +38,29 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     <div className="mobile-nav__container">
                         <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul className="main-menu__list">
-                                <li className={isActive.key == 1 ? "dropdown current" : "dropdown"}><Link href="/">Home</Link>
-                                    <ul style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
-                                        <li><Link href="/">Home One</Link></li>
-                                        <li><Link href="index2">Home Two</Link></li>
-                                        <li><Link href="index3">Home Three</Link></li>
-                                        <li><Link href="index-dark">Home Dark</Link></li>
-                                    </ul>
-                                    <button className={isActive.key == 1 ? "expanded open" : ""} onClick={() => handleToggle(1)}><span className="fa fa-angle-right" /></button>
-                                </li>
+                                <li><Link href="/">Inicio</Link></li>
                                 <li><Link href="/about/">About</Link></li>
-                                <li className={isActive.key == 2 ? "dropdown current" : "dropdown"}><Link href="/#">Pages</Link>
-                                    <ul style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>                                 
-                                        <li><Link href="team">Team</Link></li>
-                                        <li><Link href="team-details">Team Details</Link></li>
-                                        <li><Link href="projects">Projects</Link></li>
-                                        <li><Link href="project-details">Project Details</Link></li>
-                                        <li><Link href="testimonials">Testimonials</Link></li>
-                                        <li><Link href="pricing">Pricing</Link></li>
-                                        <li><Link href="faq">Faq</Link></li>
-                                        <li><Link href="404">404 Error</Link></li>
-                                    </ul>
-                                    <button className={isActive.key == 2 ? "expanded open" : ""} onClick={() => handleToggle(2)}><span className="fa fa-angle-right" /></button>
-                                </li>
-                                <li className={isActive.key == 3 ? "dropdown current" : "dropdown"}><Link href="/#">Services</Link>
+                            
+                                <li className={isActive.key == 3 ? "dropdown current" : "dropdown"}><Link href="/#">Servicios</Link>
                                     <ul style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>                                 
-                                        <li><Link href="services">Services</Link></li>
-                                        <li><Link href="electric-panel-repair">Electric Panel Repair</Link></li>
-                                        <li><Link href="short-circuit-repair">Short Circuit Repair</Link>
-                                        </li>
-                                        <li><Link href="commercial-services">Commercial Services</Link>
-                                        </li>
-                                        <li><Link href="installing-ceiling-fan">Installing A Ceiling Fan</Link>
-                                        </li>
-                                        <li><Link href="lighting-fixtures">Lighting A Fixtures</Link>
-                                        </li>
-                                        <li><Link href="maintenance-service">Maintenance Service</Link></li>
+                                        <li><Link href="#">División Paneles Solares</Link></li>
+                                        <li><Link href="electric-panel-repair">División Equipos de Bombeo</Link></li>
+                                        
                                     </ul>
                                     <button className={isActive.key == 3 ? "expanded open" : ""} onClick={() => handleToggle(3)}><span className="fa fa-angle-right" /></button>
                                 </li>
-                                <li className={isActive.key == 4 ? "dropdown current" : "dropdown"}><Link href="/#">Shop</Link>
-                                    <ul style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>                                 
-                                        <li><Link href="shop">Products</Link></li>
+                                <li className={isActive.key == 4 ? "dropdown current" : "dropdown"}><Link href="/#">Productos</Link>
+                                 {/*    <ul style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>                                 
+                                        <li><Link href="shop">Residencial</Link></li>
                                         <li><Link href="shop-details">Products Details</Link></li>
                                         <li><Link href="cart">Cart</Link></li>
                                         <li><Link href="checkout">Checkout</Link></li>
                                         <li><Link href="wishlist">Wishlist</Link></li>
                                         <li><Link href="account">My Account</Link></li>
-                                    </ul>
+                                    </ul> */}
                                     <button className={isActive.key == 4 ? "expanded open" : ""} onClick={() => handleToggle(4)}><span className="fa fa-angle-right" /></button>
                                 </li>
-                                <li className={isActive.key == 5 ? "dropdown current" : "dropdown"}><Link href="/#">Blog</Link>
-                                    <ul style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>                                 
-                                        <li><Link href="blog">Blog</Link></li>
-                                        <li><Link href="blog-list">Blog List</Link></li>
-                                        <li><Link href="blog-details">Blog Details</Link></li>
-                                    </ul>
-                                    <button className={isActive.key == 5 ? "expanded open" : ""} onClick={() => handleToggle(5)}><span className="fa fa-angle-right" /></button>
-                                </li>
+
                                 <li><Link href="/contact">Contact</Link></li>
                             </ul>
                         </div>
@@ -103,11 +68,11 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     <ul className="mobile-nav__contact list-unstyled">
                         <li>
                             <i className="fa fa-envelope"></i>
-                            <Link href="mailto:needhelp@elitecons.com">needhelp@elitecons.com</Link>
+                            <Link href="mailto:needhelp@elitecons.com">omar@rhoderm.com</Link>
                         </li>
                         <li>
                             <i className="fa fa-phone-alt"></i>
-                            <Link href="tel:666-888-0000">666 888 0000</Link>
+                            <Link href="tel:699 900 1393<">999 900 1393</Link>
                         </li>
                     </ul>
                     <div className="mobile-nav__top">
