@@ -37,22 +37,22 @@ export default function Menu() {
                     <Link href="#">Servicios</Link>
                     <ul>
                         <li className="dropdown">
-                            <Link href="#">División Paneles Solares</Link>
-                            <ul>
+                            <Link href="paneles-solares">División Paneles Solares</Link>
+                            {/* <ul>
                                 <li><Link href="#">Venta e Instalación</Link></li>
                                 <li><Link href="#">Mantenimiento y monitoreo</Link></li>
                                 <li><Link href="#">Asesoría y servicio post venta</Link></li>
-                            </ul>
+                            </ul> */}
                         </li>
                         <li className="dropdown">
-                            <Link href="#">División Equipos de Bombeo</Link>
-                            <ul>
+                            <Link href="servcie-equipos-bombeo">División Equipos de Bombeo</Link>
+                            {/* <ul>
                                 <li><Link href="#">Venta e Instalación</Link></li>
                                 <li><Link href="#">Sistemas de cloro gas hipoclorito</Link></li>
                                 <li><Link href="#">Bombas sumergibles</Link></li>
                                 <li><Link href="#">Mantenimiento</Link></li>
 
-                            </ul>
+                            </ul> */}
                         </li>
                     </ul>
                 </li>

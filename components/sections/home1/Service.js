@@ -12,7 +12,7 @@ export default function Service() {
                                 <div className="services-one__icon">
                                     <span className="icon-affordable-price"></span>
                                 </div>
-                                <h3 className="services-one__title"><Link href="pricing">Inversión Inteligente</Link></h3>
+                                <h3 className="services-one__title"><Link href="about">Inversión Inteligente</Link></h3>
                                 <p className="services-one__text">Diseñamos soluciones eficientes y rentables <br/> pensadas para tu hogar o negocio.<br/> Ahorra désde el primer día.</p>
                             </div>
                         </li>
@@ -21,7 +21,7 @@ export default function Service() {
                                 <div className="services-one__icon">
                                     <span className="icon-setting"></span>
                                 </div>
-                                <h3 className="services-one__title"><Link href="about">Garantía del 100%</Link></h3>
+                                <h3 className="services-one__title"><Link href="services">Garantía del 100%</Link></h3>
                                 <p className="services-one__text">Cada sistema solar y equipo de bombeo <br/>que instalamos cuenta con garantía completa, ofreciéndote tranquilidad <br/>y soporte técnico especializado.</p>
                             </div>
                         </li>

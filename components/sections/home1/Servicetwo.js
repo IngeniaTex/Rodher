@@ -25,10 +25,10 @@ export default function Servicetwo() {
                                 <span className="icon-ceiling-lamp-2"></span>
                             </div>
                             <p className="services-two__sub-title">Energía Solar</p>
-                            <h3 className="services-two__title"><Link href="electric-panel-repair">Paneles Solares</Link>
+                            <h3 className="services-two__title"><Link href="paneles-solares">Paneles Solares</Link>
                             </h3>
                             <p className="services-two__text">Diseñamos e instalamos sistemas fotovoltaicos para que generes tu propia energía eléctrica, reduciendo costos y obteniendo independencia energética.</p>
-                            <Link href="electric-panel-repair" className="services-two__learn-more">Ver más<span
+                            <Link href="paneles-solares" className="services-two__learn-more">Ver más<span
                                     className="icon-arrow-right"></span></Link>
                         </div>
                     </div>
@@ -37,14 +37,14 @@ export default function Servicetwo() {
                     <div className="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay="300ms">
                         <div className="services-two__single">
                             <div className="services-two__icon">
-                                <span className="icon-services"></span>
+                                <span className="icon-settings-1"></span>
                             </div>
                             <p className="services-two__sub-title">Equipos de bombeo</p>
-                            <h3 className="services-two__title"><Link href="lighting-fixtures">Productos de bombeo</Link>
+                            <h3 className="services-two__title"><Link href="servcie-equipos-bombeo">Productos de bombeo</Link>
                             </h3>
                             <p className="services-two__text">Suministro e instalación de bombas hidráulicas para riego, presión de agua, extracción, procesos industriales. Soluciones dimensionadas a tu necesidad.</p>
                             <Link href="lighting-fixtures" className="services-two__learn-more">Ver más<span
-                                    className="icon-arrow-right"></span></Link>
+                                    className="servcie-equipos-bombeo"></span></Link>
                         </div>
                     </div>
                     {/*Services Two Single End*/}
@@ -52,12 +52,13 @@ export default function Servicetwo() {
                     <div className="col-xl-4 col-lg-6 wow fadeInRight" data-wow-delay="500ms">
                         <div className="services-two__single">
                             <div className="services-two__icon">
-                                <span className="icon-technician-1"></span>
+                                <span className="icon-product-return"></span>
                             </div>
-                            <p className="services-two__sub-title">Mantenimiento</p>
-                            <h3 className="services-two__title"><Link href="maintenance-service">Mantenimiento integral</Link>
+                            <p className="services-two__sub-title">Productos</p>
+                            <h3 className="services-two__title"><Link href="#">Catálogo de productos</Link>
                             </h3>
-                            <p className="services-two__text">Servicios preventivos y correctivos para garantizar que tus instalaciones solares e hidráulicas operen con óptimo rendimiento y larga vida útil.
+                            <p className="services-two__text">Contamos con paneles solares, bombas, controladores, sistemas de cloración y accesorios 
+                            diseñados para garantizar eficiencia, durabilidad y un desempeño óptimo en cada instalación.
                             </p>
                             <Link href="maintenance-service" className="services-two__learn-more">Ver más<span
                                     className="icon-arrow-right"></span></Link>
