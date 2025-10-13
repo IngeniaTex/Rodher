@@ -48,13 +48,11 @@ export default function Footer1() {
                                 <div className="footer-widget__title-box">
                                     <h3 className="footer-widget__title">Servicios</h3>
                                 </div>
-                                {/* <ul className="footer-widget__link list-unstyled">
-                                    <li><Link href="electric-panel-repair">Electric Repair</Link></li>
-                                    <li><Link href="lighting-fixtures">Lighting & Fixture</Link></li>
-                                    <li><Link href="maintenance-service">European Lard Sration</Link></li>
-                                    <li><Link href="maintenance-service">Electric Maintenance</Link></li>
-                                    <li><Link href="installing-ceiling-fan">Colling Service</Link></li>
-                                </ul> */}
+                                <ul className="footer-widget__link list-unstyled">
+                                    <li><Link href="paneles-solares">División Paneles Solares</Link></li>
+                                    <li><Link href="servcie-equipos-bombeo">División Equipos de Boombeo</Link></li>
+                                    <li><Link href="#">Productos</Link></li>
+                                </ul>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
@@ -85,7 +83,7 @@ export default function Footer1() {
             <div className="site-footer__bottom">
                 <div className="container">
                     <div className="site-footer__bottom-inner">
-                        <p className="site-footer__bottom-text">Rodher Ingeniería 2025. Todos los derechos reservados</p>
+                        <p className="site-footer__bottom-text">© Rodher Ingeniería 2025. Todos los derechos reservados</p>
                         <ul className="list-unstyled site-footer__bottom-menu">
                             <li><Link href="about">Términos y Condiciones</Link></li>
                             <li><Link href="about">Pólitica de Privacidad</Link></li>

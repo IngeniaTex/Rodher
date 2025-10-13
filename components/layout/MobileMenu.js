@@ -61,14 +61,14 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                     <button className={isActive.key == 4 ? "expanded open" : ""} onClick={() => handleToggle(4)}><span className="fa fa-angle-right" /></button>
                                 </li>
 
-                                <li><Link href="/contact">Contact</Link></li>
+                                <li><Link href="/contact">Contacto</Link></li>
                             </ul>
                         </div>
                     </div>
                     <ul className="mobile-nav__contact list-unstyled">
                         <li>
                             <i className="fa fa-envelope"></i>
-                            <Link href="mailto:needhelp@elitecons.com">omar@rhoderm.com</Link>
+                            <Link href="mailto:needhelp@elitecons.com">rodher@gmail.com.com</Link>
                         </li>
                         <li>
                             <i className="fa fa-phone-alt"></i>

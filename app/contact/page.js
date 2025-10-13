@@ -47,6 +47,12 @@ export default function Home() {
             </div>
         </section>
         {/*Contact Two End*/}
+                {/*Contact Three Start*/}
+                <section className="contact-three">
+                    <div className="container">
+                        <div className="contact-three__inner w-80">
+                            <div className="contact-three__right w-80">
+                                <h3 className="contact-three__form-title text-center mb-4">¡Cotiza Ahora!</h3>
 
         {/*Contact Three Start*/}
         <section className="contact-three">
@@ -68,27 +74,42 @@ export default function Home() {
                                     <div className="row">
                                         <div className="col-xl-6 col-lg-6">
                                             <div className="contact-three__input-box">
-                                                <input type="text" name="name" placeholder="Your name" required=""/>
+                                                <input type="email" name="email" placeholder="Correo Electrónico" required="" />
                                             </div>
                                         </div>
                                         <div className="col-xl-6 col-lg-6">
                                             <div className="contact-three__input-box">
-                                                <input type="email" name="email" placeholder="Your Email" required=""/>
+                                                <input type="number" placeholder="Télefono" name="number" />
                                             </div>
                                         </div>
                                         <div className="col-xl-6 col-lg-6">
                                             <div className="contact-three__input-box">
-                                                <input type="number" placeholder="Mobile" name="number"/>
+                                                <input type="text" placeholder="Empresa" name="company" />
                                             </div>
                                         </div>
                                         <div className="col-xl-6 col-lg-6">
                                             <div className="contact-three__input-box">
-                                                <input type="text" placeholder="Company" name="company"/>
+                                                <select className="nice-select" name="tipo_inmueble" required>
+                                                    <option value="">Tipo de inmueble</option>
+                                                    <option value="residencial">Residencial</option>
+                                                    <option value="comercial">Comercial</option>
+                                                    <option value="industrial">Industrial</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div className="col-xl-6 col-lg-6">
+                                            <div className="contact-three__input-box">
+                                                <input type="number" placeholder="Consumo mensual (kwh)" name="consumo" />
+                                            </div>
+                                        </div>
+                                        <div className="col-xl-6 col-lg-6">
+                                            <div className="contact-three__input-box">
+                                                <input type="text" placeholder="Ciudad o Municipio" name="ubicacion" />
                                             </div>
                                         </div>
                                         <div className="col-xl-12">
                                             <div className="contact-three__input-box text-message-box">
-                                                <textarea name="message" placeholder="Messege"></textarea>
+                                                <textarea name="message" placeholder="Describe tu proyecto"></textarea>
                                             </div>
                                             <div className="contact-three__btn-box">
                                                 <button type="submit" className="thm-btn contact-three__btn"
@@ -99,15 +120,11 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </form>
-                                <p className="ajax-response mb-0"></p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        {/*Contact Three End*/}
-
+                </section>
+                {/*Contact Three End*/}
 
         {/*CTA One Start*/}
         <section className="cta-one">
