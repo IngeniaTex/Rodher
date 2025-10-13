@@ -43,22 +43,8 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                             
                                 <li className={isActive.key == 3 ? "dropdown current" : "dropdown"}><Link href="/#">Servicios</Link>
                                     <ul style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>                                 
-                                        <li className="dropdown"><Link href="paneles-solares">División Paneles Solares</Link>
-                                            {/* <ul>
-                                                <li><Link href="#">Venta e Instalación</Link></li>
-                                                <li><Link href="#">Mantenimiento y monitoreo</Link></li>
-                                                <li><Link href="#">Asesoría y servicio post venta</Link></li>
-                                            </ul> */}
-                                        </li>
-                                        <li className="dropdown"><Link href="servcie-equipos-bombeo">División Equipos de Bombeo</Link>
-                                        {/* <ul>
-                                            <li><Link href="#">Venta e Instalación</Link></li>
-                                            <li><Link href="#">Sistemas de cloro gas hipoclorito</Link></li>
-                                            <li><Link href="#">Bombas sumergibles</Link></li>
-                                            <li><Link href="#">Mantenimiento</Link></li>
-
-                                        </ul> */}
-                                        </li>
+                                        <li><Link href="#">División Paneles Solares</Link></li>
+                                        <li><Link href="electric-panel-repair">División Equipos de Bombeo</Link></li>
                                         
                                     </ul>
                                     <button className={isActive.key == 3 ? "expanded open" : ""} onClick={() => handleToggle(3)}><span className="fa fa-angle-right" /></button>
