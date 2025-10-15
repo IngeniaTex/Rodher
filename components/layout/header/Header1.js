@@ -58,13 +58,15 @@ export default function Header2({ scroll, handleMobileMenu }) {
                             <div className="main-menu-two__right">
                                 <div className="main-menu-two__call-and-btn-box">
                                     <div className="main-menu-two__call">
-                                        <div className="main-menu-two__call-icon">
-                                            <span className="icon-phone-call"></span>
-                                        </div>
-                                        <div className="main-menu-two__call-number">
-                                            <p>Llámanos!</p>
-                                            <h5><Link href="tel:00554755242">999 900 1393</Link></h5>
-                                        </div>
+                                    <a 
+                                        href="https://wa.me/529999001393" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="whatsapp-button whatsapp-button--dark whatsapp-button--compact"
+                                    >
+                                        <i className="fab fa-whatsapp"></i>
+                                        <span>WhatsApp</span>
+                                    </a>
                                     </div>
                                     <div className="main-menu-two__btn-box">
                                         <Link href="contact" className="main-menu-two__btn thm-btn">Cotizaciones</Link>
@@ -93,13 +95,15 @@ export default function Header2({ scroll, handleMobileMenu }) {
                             <div className="main-menu-two__right">
                                 <div className="main-menu-two__call-and-btn-box">
                                     <div className="main-menu-two__call">
-                                        <div className="main-menu-two__call-icon">
-                                            <span className="icon-phone-call"></span>
-                                        </div>
-                                        <div className="main-menu-two__call-number">
-                                            <p>Llamanos!</p>
-                                            <h5><Link href="tel:00554755242">999 900 1393</Link></h5>
-                                        </div>
+                                        <a 
+                                        href="https://wa.me/529999001393" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="whatsapp-button whatsapp-button--dark whatsapp-button--compact"
+                                    >
+                                        <i className="fab fa-whatsapp"></i>
+                                        <span>WhatsApp</span>
+                                        </a>
                                     </div>
                                     <div className="main-menu-two__btn-box">
                                         <Link href="contact" className="main-menu-two__btn thm-btn">Cotizaciones</Link>
