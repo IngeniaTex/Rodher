@@ -134,13 +134,18 @@ export default function Home() {
                             <Link href="contact" className="cta-one__btn thm-btn">Promociones</Link>
                         </div>
                         <div className="cta-one__call-box">
-                            <div className="icon">
-                                <span className="icon-call"></span>
-                            </div>
-                            <div className="content">
-                                <p>WhatsApp</p>
-                                <h4><Link href="tel:9999001393">+52 999 900 1393</Link></h4>
-                            </div>
+                        <div className="content">
+                            <a 
+                                    href="https://wa.me/529999001393" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    // className="whatsapp-button whatsapp-button--dark whatsapp-button--compact"
+                                    className="whatsapp-button whatsapp-button--filled whatsapp-button--compact"
+                                >
+                                    <i className="fab fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                        </div>
                         </div>
                     </div>
                 </div>
