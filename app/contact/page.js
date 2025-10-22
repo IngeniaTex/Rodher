@@ -54,7 +54,7 @@ export default function Home() {
                             <div className="contact-three__right w-80">
                                 <h3 className="contact-three__form-title text-center mb-4">¡Cotiza Ahora!</h3>
                                 <form id="contact-form" className="contact-form-validated contact-three__form"
-                                    action="assets/mail.php" method="POST">
+                                    action="api/contact" method="POST">
                                     <div className="row">
                                         <div className="col-xl-6 col-lg-6">
                                             <div className="contact-three__input-box">
