@@ -293,6 +293,7 @@
 
 .contact-three__input-box input[type="text"],
 .contact-three__input-box input[type="email"],
+.contact-three__input-box input[type="tel"],
 .contact-three__input-box input[type="number"] {
     height: 57px;
     width: 100%;
