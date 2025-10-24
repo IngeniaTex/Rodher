@@ -51,7 +51,7 @@ export default function Footer1() {
                                 <ul className="footer-widget__link list-unstyled">
                                     <li><Link href="paneles-solares">División Paneles Solares</Link></li>
                                     <li><Link href="servcie-equipos-bombeo">División Equipos de Boombeo</Link></li>
-                                    <li><Link href="#">Productos</Link></li>
+                                    <li><Link href="productos-paneles">Productos</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ export default function Footer1() {
                     <div className="site-footer__bottom-inner">
                         <p className="site-footer__bottom-text">© Rodher Ingeniería 2025. Todos los derechos reservados</p>
                         <ul className="list-unstyled site-footer__bottom-menu">
-                            <li><Link href="about">Términos y Condiciones</Link></li>
+                            {/* <li><Link href="about">Términos y Condiciones</Link></li> */}
                             <li><Link href="about">Pólitica de Privacidad</Link></li>
                         </ul>
                     </div>
