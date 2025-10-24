@@ -59,9 +59,8 @@ export default function Menu() {
                 <li className="dropdown">
                 <Link href="#">Productos</Link>
                     <ul>
-                        <li><Link href="#">Residencial</Link></li>
-                        <li><Link href="#">Comercial</Link></li>
-                        <li><Link href="#">Industrial</Link></li>
+                        <li><Link href="productos-paneles">Paneles Solares</Link></li>
+                        <li><Link href="productos-paneles">Equipos de Bombeo</Link></li>
                         {/* <li><Link href="shop">Products</Link></li>
                         <li><Link href="shop-details">Products Details</Link></li>
                         <li><Link href="cart">Cart</Link></li>
