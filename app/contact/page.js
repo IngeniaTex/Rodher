@@ -1,6 +1,8 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import ContactForm from "./ContactForm"
+
 export default function Home() {
 
     return (
@@ -53,7 +55,8 @@ export default function Home() {
                         <div className="contact-three__inner w-80">
                             <div className="contact-three__right w-80">
                                 <h3 className="contact-three__form-title text-center mb-4">¡Cotiza Ahora!</h3>
-                                <form id="contact-form" className="contact-form-validated contact-three__form"
+                                <ContactForm />
+                                {/* <form id="contact-form" className="contact-form-validated contact-three__form"
                                     action="api/contact" method="POST">
                                     <div className="row">
                                         <div className="col-xl-6 col-lg-6">
@@ -103,7 +106,7 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                </form> */}
                             </div>
                         </div>
                     </div>
