@@ -1,6 +1,8 @@
 'use client'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import ContactForm from "./ContactForm"
+
 export default function Home() {
 
     return (
@@ -92,8 +94,9 @@ export default function Home() {
                     <h2>Contacto</h2>
                     <p>Solicitar Cotizacón <span>*</span></p>
                 </div>
+                <ContactForm />
 
-                <form id="contact-form" name="contact_form" className="default-form2"
+                {/* <form id="contact-form" name="contact_form" className="default-form2"
                     action="api/product" method="POST">
                     <div className="row">
                         <div className="col-xl-6 col-lg-12 col-md-12">
@@ -137,7 +140,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </form>
+                </form> */}
             </div>
         </section>
         {/*End Shop Details Page1*/}

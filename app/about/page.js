@@ -264,7 +264,7 @@ export default function Home() {
                         Nuestros proyectos están diseñados para brindarte el máximo rendimiento<br/> y una recuperación rápida de inversión.</p>
                     <div className="cta-one__btn-and-call-box">
                         <div className="cta-one__btn-box">
-                            <Link href="contact" className="cta-one__btn thm-btn">Promociones</Link>
+                            <Link href="promociones" className="cta-one__btn thm-btn">Promociones</Link>
                         </div>
                         <div className="cta-one__call-box">
                         <div className="content">

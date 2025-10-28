@@ -91,11 +91,11 @@ export default function Home() {
                                 <h3 className="service-details__services-title">Nuesrtos Servicios</h3>
                                 <ul className="service-details__services-list list-unstyled">
                                     <li>
-                                        <Link href="paneles-solares">Venta e Instalación <span
+                                        <Link href="#">Venta e Instalación <span
                                                 className="icon-arrow-right"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="servcie-equipos-bombeo">Mantenimiento y monitoreo<span
+                                        <Link href="#">Mantenimiento y monitoreo<span
                                                 className="icon-arrow-right"></span></Link>
                                     </li>
                                     <li>
@@ -172,7 +172,7 @@ export default function Home() {
                                 Nuestros proyectos están diseñados para brindarte el máximo rendimiento<br/> y una recuperación rápida de inversión.</p>
                             <div className="cta-one__btn-and-call-box">
                                 <div className="cta-one__btn-box">
-                                    <Link href="contact" className="cta-one__btn thm-btn">Promociones</Link>
+                                    <Link href="promociones" className="cta-one__btn thm-btn">Promociones</Link>
                                 </div>
                                 <div className="cta-one__call-box">
                                     <div className="content">
