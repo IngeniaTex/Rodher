@@ -166,7 +166,7 @@ export default function Home() {
                                  eficiencia y tranquilidad.</p>
                             <p className="video-one__text-2">Ventajas destacadas</p>
                             <div className="video-one__btn-box">
-                                <Link href="shop" className="video-one__btn thm-btn">Productos</Link>
+                                <Link href="productos-paneles" className="video-one__btn thm-btn">Productos</Link>
                                 <Link href="contact" className="video-one__btn-two thm-btn">Cotizaciones</Link>
                             </div>
                         </div>
