@@ -91,11 +91,11 @@ export default function Home() {
                                 <h3 className="service-details__services-title">Nuesrtos Servicios</h3>
                                 <ul className="service-details__services-list list-unstyled">
                                     <li>
-                                        <Link href="paneles-solares">Venta e Instalación <span
+                                        <Link href="#">Venta e Instalación <span
                                                 className="icon-arrow-right"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="servcie-equipos-bombeo">Mantenimiento y monitoreo<span
+                                        <Link href="#">Mantenimiento y monitoreo<span
                                                 className="icon-arrow-right"></span></Link>
                                     </li>
                                     <li>

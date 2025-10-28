@@ -14,7 +14,7 @@ export default function Footer4() {
                         <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div className="footer-widget__column footer-widget__about">
                                 <div className="footer-widget__logo">
-                                    <Link href="/"><img src="assets/images/resources/logo-1.png"
+                                    <Link href="/"><img src="assets/images/resources/logo-2-rodher.png"
                                             alt=""/></Link>
                                 </div>
                                 <p className="footer-widget__about-text">Trabajamos para ofrecerte soluciones confiables <br/> y eficientes en energía solar y bombeo hidráulico, 

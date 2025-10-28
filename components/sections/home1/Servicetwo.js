@@ -43,7 +43,7 @@ export default function Servicetwo() {
                             <h3 className="services-two__title"><Link href="servcie-equipos-bombeo">Productos de bombeo</Link>
                             </h3>
                             <p className="services-two__text">Suministro e instalación de bombas hidráulicas para riego, presión de agua, extracción, procesos industriales. Soluciones dimensionadas a tu necesidad.</p>
-                            <Link href="lighting-fixtures" className="services-two__learn-more">Ver más<span
+                            <Link href="servcie-equipos-bombeo" className="services-two__learn-more">Ver más<span
                                     className="servcie-equipos-bombeo"></span></Link>
                         </div>
                     </div>
@@ -55,12 +55,12 @@ export default function Servicetwo() {
                                 <span className="icon-product-return"></span>
                             </div>
                             <p className="services-two__sub-title">Productos</p>
-                            <h3 className="services-two__title"><Link href="#">Catálogo de productos</Link>
+                            <h3 className="services-two__title"><Link href="productos-paneles">Catálogo de productos</Link>
                             </h3>
                             <p className="services-two__text">Contamos con paneles solares, bombas, controladores, sistemas de cloración y accesorios 
                             diseñados para garantizar eficiencia, durabilidad y un desempeño óptimo en cada instalación.
                             </p>
-                            <Link href="maintenance-service" className="services-two__learn-more">Ver más<span
+                            <Link href="productos-paneles" className="services-two__learn-more">Ver más<span
                                     className="icon-arrow-right"></span></Link>
                         </div>
                     </div>

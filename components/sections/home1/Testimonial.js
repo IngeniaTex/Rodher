@@ -81,7 +81,7 @@ export default function Testimonial() {
                                     <span className="fas fa-star"></span>
                                 </div>
                                 <div className="testimonial-one__client-info">
-                                    <h3><Link href="testimonials">Cliente residencial</Link></h3>
+                                    <h3><Link href="#">Cliente residencial</Link></h3>
                                     <p>Manager</p>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ export default function Testimonial() {
                                     <span className="fas fa-star"></span>
                                 </div>
                                 <div className="testimonial-one__client-info">
-                                    <h3><Link href="testimonials">Cliente industrial</Link></h3>
+                                    <h3><Link href="#">Cliente industrial</Link></h3>
                                     <p>Manager</p>
                                 </div>
                             </div>

@@ -4,6 +4,8 @@ import 'swiper/css'
 // import "swiper/css/navigation"
 import "swiper/css/pagination"
 import 'swiper/css/free-mode';
+import CookieConsent from "@/components/CookieConsent";
+
 import { archivo, titilliumWeb, pacifico } from '@/lib/font'
 export const metadata = {
     title: 'Rodher',
@@ -13,7 +15,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${archivo.variable} ${titilliumWeb.variable} ${pacifico.variable}`}>
-            <body>{children}</body>
+            <body>
+                {children}
+            <   CookieConsent /> {/*Banner de cookies */}
+            </body>
         </html>
     )
+
 }

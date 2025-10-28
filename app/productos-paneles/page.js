@@ -35,7 +35,7 @@ export default function Home() {
                                         </div>
                                         <div className="content-box">
                                             <div className="title">
-                                                <h3><Link href="shop-details">Panel Solar</Link></h3>
+                                                <h3><Link href="paneles-details">Panel Solar</Link></h3>
                                             </div>
                                             <div className="bottom-box">
                                                 <ul className="rating-icon clearfix">
@@ -65,7 +65,7 @@ export default function Home() {
                                         </div>
                                         <div className="content-box">
                                             <div className="title">
-                                                <h3><Link href="shop-details">Panele Solar 2</Link></h3>
+                                                <h3><Link href="paneles-details">Panele Solar 2</Link></h3>
                                             </div>
                                             <div className="bottom-box">
                                                 <ul className="rating-icon clearfix">
@@ -95,7 +95,7 @@ export default function Home() {
                                         </div>
                                         <div className="content-box">
                                             <div className="title">
-                                                <h3><Link href="shop-details">Panel Solar 3</Link></h3>
+                                                <h3><Link href="paneles-details">Panel Solar 3</Link></h3>
                                             </div>
                                             <div className="bottom-box">
                                                 <ul className="rating-icon clearfix">
@@ -123,7 +123,7 @@ export default function Home() {
                                         </div>
                                         <div className="content-box">
                                             <div className="title">
-                                                <h3><Link href="shop-details">Panel Solar 4</Link></h3>
+                                                <h3><Link href="paneles-details">Panel Solar 4</Link></h3>
                                             </div>
                                             <div className="bottom-box">
                                                 <ul className="rating-icon clearfix">
