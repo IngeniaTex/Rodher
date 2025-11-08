@@ -248,7 +248,7 @@ export default function Home() {
             <div className="container">
                 <div className="cta-one__inner wow fadeInUp" data-wow-delay="300ms">
                     <div className="cta-one__img">
-                        <img src="assets/images/resources/Super_Promo.png" alt=""/>
+                        <img src="assets/images/resources/el-buen-mes.png" alt=""/>
                     </div>
                     <div className="section-title text-left">
                         <div className="section-title__tagline-box">

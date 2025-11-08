@@ -5,7 +5,7 @@ export default function Home() {
 
     return (
         <>
-        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Paneles Solares">
+        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Sistemas de Cloración">
         {/*Service Details Start*/}
         <section className="service-details">
             <div className="container">
@@ -15,33 +15,54 @@ export default function Home() {
                             <div className="service-details__img">
                                 <img src="assets/images/services/service-details-paneles-solares.png" alt=""/>
                             </div>
-                            <h3 className="service-details__title-1">Paneles Solares</h3>
-                            <p className="service-details__text-1">En RODHER Ingeniería ofrecemos soluciones completas en energía solar mediante la 
-                                 venta e instalación de sistemas fotovoltaicosdiseñados para hogares, negocios e industrias. 
-                                Nuestros proyectos están orientados al ahorro energético, la sustentabilidad y el retorno de inversión a corto plazo.</p>
-                            <p className="service-details__text-2">Además, brindamos mantenimiento preventivo, correctivo y monitoreo remoto para garantizar el 
-                                máximo rendimiento de tus paneles solares a lo largo de su vida útil. Nuestro equipo técnico especializado 
-                                te acompaña desde la evaluación inicial hasta la postventa, asegurando calidad, seguridad y eficiencia en cada instalación.</p>
-                            <ul className="service-details__points-list list-unstyled">
+                            <h3 className="service-details__title-1">Sistemas de Cloración</h3>
+
+                                <p className="service-details__text-1">
+                                En RODHER Ingeniería desarrollamos soluciones completas en 
+                                sistemas de cloración por gas e hipoclorito de sodio, diseñadas para el 
+                                tratamiento, desinfección y potabilización del agua en aplicaciones 
+                                 residenciales, comerciales e industriales. 
+                                Nuestros proyectos garantizan un suministro seguro y eficiente de agua, cumpliendo con las 
+                                normas y estándares de calidad más exigentes.
+                                </p>
+
+                                <p className="service-details__text-2">
+                                Contamos con equipos automatizados de alta precisión para el dosificado de cloro gas o 
+                                hipoclorito, integrados con sistemas de control y monitoreo que aseguran una operación 
+                                confiable, estable y de bajo mantenimiento.  
+                                Cada instalación es realizada por personal técnico certificado, priorizando la 
+                                seguridad, la durabilidad y el cumplimiento de las regulaciones ambientales.
+                                </p>
+
+                                <ul className="service-details__points-list list-unstyled">
                                 <li>
                                     <div className="icon">
-                                        <span className="icon-arrow-right"></span>
+                                    <span className="icon-arrow-right"></span>
                                     </div>
-                                    <p>Venta e instalación: Equipos solares certificados, instalación profesional y proyectos a medida según tu consumo.</p>
+                                    <p><strong>Venta e instalación:</strong> Suministro, instalación y puesta en marcha de 
+                                    sistemas de cloración adaptados a la capacidad y tipo de aplicación de tu sistema hidráulico.</p>
                                 </li>
+
                                 <li>
                                     <div className="icon">
-                                        <span className="icon-arrow-right"></span>
+                                    <span className="icon-arrow-right"></span>
                                     </div>
-                                    <p>Mantenimiento y monitoreo: Revisión, limpieza y monitoreo continuo para asegurar el máximo desempeño energético.</p>
+                                    <p><strong>Cloro gas e hipoclorito:</strong> Equipos dosificadores y paneles de control 
+                                    automáticos para desinfección continua en plantas de tratamiento, pozos profundos y redes 
+                                    de distribución de agua.</p>
                                 </li>
+
+
                                 <li>
                                     <div className="icon">
-                                        <span className="icon-arrow-right"></span>
+                                    <span className="icon-arrow-right"></span>
                                     </div>
-                                    <p>Asesoría y servicio postventa: Soporte técnico, garantías activas y acompañamiento en la optimización de tus sistemas solares.</p>
+                                    <p><strong>Mantenimiento preventivo y correctivo:</strong> Servicios especializados de 
+                                    inspección, calibración y reparación de equipos de cloración para asegurar el funcionamiento 
+                                    óptimo y la vida útil del sistema.</p>
                                 </li>
-                            </ul>
+                                </ul>
+
                             <div className="service-details__img-box">
                                 <div className="row">
                                     <div className="col-xl-6">
@@ -90,23 +111,16 @@ export default function Home() {
                             <div className="service-details__services-box">
                                 <h3 className="service-details__services-title">Nuesrtos Servicios</h3>
                                 <ul className="service-details__services-list list-unstyled">
-                                    <li>
+                                    <li className="active">
                                         <Link href="#">Venta e Instalación <span
                                                 className="icon-arrow-right"></span></Link>
                                     </li>
+                                
                                     <li>
-                                        <Link href="#">Mantenimiento y monitoreo<span
+                                        <Link href="installing-ceiling-fan">Mantenimiento<span
                                                 className="icon-arrow-right"></span></Link>
                                     </li>
-                                    <li>
-                                        <Link href="#">Asesoría y servicio post venta<span
-                                                className="icon-arrow-right"></span></Link>
-                                    </li>
-                                    {/* <li className="active">
-                                        <Link href="installing-ceiling-fan">installing a ceiling fan<span
-                                                className="icon-arrow-right"></span></Link>
-                                    </li>
-                                    <li>
+                                    {/*<li>
                                         <Link href="lighting-fixtures">Lighting & Fixtures<span
                                                 className="icon-arrow-right"></span></Link>
                                     </li>

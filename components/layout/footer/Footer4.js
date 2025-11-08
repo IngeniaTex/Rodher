@@ -49,9 +49,9 @@ export default function Footer4() {
                                     <h3 className="footer-widget__title">Servicios</h3>
                                 </div>
                                 <ul className="footer-widget__link list-unstyled">
-                                    <li><Link href="paneles-solares">División Paneles Solares</Link></li>
-                                    <li><Link href="servcie-equipos-bombeo">División Equipos de Boombeo</Link></li>
-                                    <li><Link href="productos-paneles">Productos</Link></li>
+                                    <li><Link href="paneles-solares">Paneles Solares</Link></li>
+                                    <li><Link href="servcie-equipos-bombeo">Equipos de Bombeo</Link></li>
+                                    <li><Link href="servcie-sistemas-cloracion">Sistemas de Cloración</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ export default function Footer4() {
                                     <li>
                                         <h3>Correo</h3>
                                         <div className="content">
-                                        <p><Link href="mailto:example@gmail.com">rodher@gmail.com</Link></p>
+                                        <p><Link href="mailto:example@gmail.com">ventas@rodheringenieria.com</Link></p>
                                         </div>
                                     </li>
                                     <li>

@@ -30,7 +30,7 @@ export default function Home() {
                                 <span className="icon-envelope"></span>
                             </div>
                             <p>Escribenos</p>
-                            <h3><Link href="mailto:example@gamil.com">rohder@gamil.com</Link></h3>
+                            <h3><Link href="mailto:example@gamil.com">rohder@gmail.com</Link></h3>
                         </div>
                     </div>
                     {/*Contact Two Single End*/}
@@ -41,7 +41,7 @@ export default function Home() {
                                 <span className="icon-location"></span>
                             </div>
                             <p>Ubicación</p>
-                            <h3>Mérdia, Yucatán</h3>
+                            <h3>Mérida, Yucatán</h3>
                         </div>
                     </div>
                     {/*Contact Two Single End*/}
@@ -118,7 +118,7 @@ export default function Home() {
             <div className="container">
                 <div className="cta-one__inner wow fadeInUp" data-wow-delay="300ms">
                     <div className="cta-one__img">
-                        <img src="assets/images/resources/Super_Promo.png" alt=""/>
+                        <img src="assets/images/resources/el-buen-mes.png" alt=""/>
                     </div>
                     <div className="section-title text-left">
                         <div className="section-title__tagline-box">

@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 const IMAGES = [
     "/assets/images/backgrounds/paneles-solares.png",
-    "/assets/images/resources/Super_Promo.png",
+    "/assets/images/resources/el-buen-mes.png",
     "/assets/images/backgrounds/slider-1-3.jpg",
   ];
   

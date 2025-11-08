@@ -37,7 +37,7 @@ export default function Menu() {
                     <Link href="#">Servicios</Link>
                     <ul>
                         <li className="dropdown">
-                            <Link href="paneles-solares">División Paneles Solares</Link>
+                            <Link href="paneles-solares">Paneles Solares</Link>
                             {/* <ul>
                                 <li><Link href="#">Venta e Instalación</Link></li>
                                 <li><Link href="#">Mantenimiento y monitoreo</Link></li>
@@ -45,28 +45,19 @@ export default function Menu() {
                             </ul> */}
                         </li>
                         <li className="dropdown">
-                            <Link href="servcie-equipos-bombeo">División Equipos de Bombeo</Link>
-                            {/* <ul>
-                                <li><Link href="#">Venta e Instalación</Link></li>
-                                <li><Link href="#">Sistemas de cloro gas hipoclorito</Link></li>
-                                <li><Link href="#">Bombas sumergibles</Link></li>
-                                <li><Link href="#">Mantenimiento</Link></li>
-
-                            </ul> */}
+                            <Link href="servcie-equipos-bombeo">Equipos de Bombeo</Link>
+                        </li>
+                        <li className="dropdown">
+                            <Link href="service-sistemas-cloracion">Sistemas de Cloración</Link>
                         </li>
                     </ul>
                 </li>
                 <li className="dropdown">
                 <Link href="#">Productos</Link>
                     <ul>
-                        <li><Link href="productos-paneles">Paneles Solares</Link></li>
-                        <li><Link href="productos-paneles">Equipos de Bombeo</Link></li>
-                        {/* <li><Link href="shop">Products</Link></li>
-                        <li><Link href="shop-details">Products Details</Link></li>
-                        <li><Link href="cart">Cart</Link></li>
-                        <li><Link href="checkout">Checkout</Link></li>
-                        <li><Link href="wishlist">Wishlist</Link></li>
-                        <li><Link href="account">My Account</Link></li> */}
+                        <li><Link href="productos-paneles-solares">Paneles Solares</Link></li>
+                        <li><Link href="productos-equipos-bombeo">Equipos de Bombeo</Link></li>
+                        <li><Link href="productos-sistemas-cloracion">Equipos de Bombeo</Link></li>
                     </ul>
                 </li>
                 <li>
