@@ -18,7 +18,7 @@ export default function Home() {
                             <div className="contact-two__icon">
                                 <span className="icon-call"></span>
                             </div>
-                            <p>Llámanos</p>
+                            <p style={{ textAlign: "center" }}>Llámanos</p>
                             <h3><Link href="tel:558270575405">+52 999 900 1393</Link></h3>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ export default function Home() {
                             <div className="contact-two__icon">
                                 <span className="icon-envelope"></span>
                             </div>
-                            <p>Escribenos</p>
+                            <p style={{ textAlign: "center" }}>Escribenos</p>
                             <h3><Link href="mailto:example@gamil.com">ventas@rodheringenieria.com</Link></h3>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ export default function Home() {
                             <div className="contact-two__icon">
                                 <span className="icon-location"></span>
                             </div>
-                            <p>Ubicación</p>
+                            <p style={{ textAlign: "center" }}>Ubicación</p>
                             <h3>Mérida, Yucatán</h3>
                         </div>
                     </div>
