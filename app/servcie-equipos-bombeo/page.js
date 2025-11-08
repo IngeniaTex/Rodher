@@ -104,10 +104,7 @@ export default function Home() {
                                         <Link href="#">Venta e Instalación <span
                                                 className="icon-arrow-right"></span></Link>
                                     </li>
-                                    <li>
-                                        <Link href="#">Sistemas de cloro gas hipoclorito<span
-                                                className="icon-arrow-right"></span></Link>
-                                    </li>
+                                   
                                     <li>
                                         <Link href="#">Bombas sumergibles<span
                                                 className="icon-arrow-right"></span></Link>
