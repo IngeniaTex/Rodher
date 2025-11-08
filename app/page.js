@@ -24,9 +24,9 @@ export default function Home() {
                 <Testimonial />
                 {/* <Brand />
                 <Video/>
-                <Funfacts />
+                <Funfacts />*/}
                 <Project />
-                <Pricing />
+                {/*<Pricing />
                 <Blog /> */}
                 <Cta />
             </Layout>

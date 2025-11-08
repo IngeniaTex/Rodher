@@ -87,7 +87,7 @@ export default function ContactForm() {
         <div className="col-xl-6 col-lg-6">
           <div className="contact-three__input-box">
             <select className="nice-select" name="tipo_inmueble" required>
-              <option value="">Tipo de inmueble</option>
+              <option value="">Tipo de Instalación</option>
               <option value="residencial">Residencial</option>
               <option value="comercial">Comercial</option>
               <option value="industrial">Industrial</option>
@@ -97,7 +97,7 @@ export default function ContactForm() {
 
         <div className="col-xl-6 col-lg-6">
           <div className="contact-three__input-box">
-            <input type="number" placeholder="Consumo mensual (kWh)" name="consumo" />
+            <input type="number" placeholder="Consumo Bimestral (kWh)" name="consumo" />
           </div>
         </div>
 

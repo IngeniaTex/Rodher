@@ -104,10 +104,7 @@ export default function Home() {
                                         <Link href="#">Venta e Instalación <span
                                                 className="icon-arrow-right"></span></Link>
                                     </li>
-                                    <li>
-                                        <Link href="#">Sistemas de cloro gas hipoclorito<span
-                                                className="icon-arrow-right"></span></Link>
-                                    </li>
+                                   
                                     <li>
                                         <Link href="#">Bombas sumergibles<span
                                                 className="icon-arrow-right"></span></Link>
@@ -141,7 +138,7 @@ export default function Home() {
                                         <div className="icon">
                                             <span className="icon-envelope"></span>
                                         </div>
-                                        <p><Link href="mailto:example@gmail.com">rodher@gmail.com</Link></p>
+                                        <p><Link href="mailto:example@gmail.com">ventas@rodheringenieria.com</Link></p>
                                     </li>
                                     <li>
                                         <div className="icon">
@@ -166,7 +163,7 @@ export default function Home() {
                     <div className="container">
                         <div className="cta-one__inner wow fadeInUp" data-wow-delay="300ms">
                             <div className="cta-one__img">
-                                <img src="assets/images/resources/Super_Promo.png" alt=""/>
+                                <img src="assets/images/resources/el-buen-mes.png" alt=""/>
                             </div>
                             <div className="section-title text-left">
                                 <div className="section-title__tagline-box">

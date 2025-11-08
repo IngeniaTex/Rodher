@@ -43,21 +43,18 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                             
                                 <li className={isActive.key == 3 ? "dropdown current" : "dropdown"}><Link href="/#">Servicios</Link>
                                     <ul style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>                                 
-                                        <li><Link href="#">División Paneles Solares</Link></li>
-                                        <li><Link href="electric-panel-repair">División Equipos de Bombeo</Link></li>
-                                        
+                                        <li><Link href="paneles-solares">Paneles Solares</Link></li>
+                                        <li><Link href="servcie-equipos-bombeo">Equipos de Bombeo</Link></li>
+                                        <li><Link href="service-sistemas-cloracion">Sistemas de Cloración</Link></li>
                                     </ul>
                                     <button className={isActive.key == 3 ? "expanded open" : ""} onClick={() => handleToggle(3)}><span className="fa fa-angle-right" /></button>
                                 </li>
                                 <li className={isActive.key == 4 ? "dropdown current" : "dropdown"}><Link href="/#">Productos</Link>
-                                 {/*    <ul style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>                                 
-                                        <li><Link href="shop">Residencial</Link></li>
-                                        <li><Link href="shop-details">Products Details</Link></li>
-                                        <li><Link href="cart">Cart</Link></li>
-                                        <li><Link href="checkout">Checkout</Link></li>
-                                        <li><Link href="wishlist">Wishlist</Link></li>
-                                        <li><Link href="account">My Account</Link></li>
-                                    </ul> */}
+                                    <ul style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>                                 
+                                        <li><Link href="productos-paneles-solares">Paneles Solares</Link></li>
+                                        <li><Link href="productos-equipos-bombeo">Equipos de Bombeo</Link></li>
+                                        <li><Link href="productos-sistemas-cloracion">Sistemas de Cloración</Link></li>
+                                    </ul>
                                     <button className={isActive.key == 4 ? "expanded open" : ""} onClick={() => handleToggle(4)}><span className="fa fa-angle-right" /></button>
                                 </li>
 
@@ -68,7 +65,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     <ul className="mobile-nav__contact list-unstyled">
                         <li>
                             <i className="fa fa-envelope"></i>
-                            <Link href="mailto:needhelp@elitecons.com">rodher@gmail.com.com</Link>
+                            <Link href="mailto:needhelp@elitecons.com">ventas@rodheringenieria.com</Link>
                         </li>
                         <li>
                             <i className="fa fa-phone-alt"></i>
