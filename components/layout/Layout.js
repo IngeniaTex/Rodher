@@ -1,6 +1,8 @@
 
 'use client'
 import { useEffect, useState } from "react"
+import { usePathname } from 'next/navigation'
+
 import BackToTop from '../elements/BackToTop'
 import DataBg from "../elements/DataBg"
 import Breadcrumb from './Breadcrumb'
@@ -18,10 +20,47 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
     const [scroll, setScroll] = useState(0)
     // Mobile Menu
     const [isMobileMenu, setMobileMenu] = useState(false)
-    const handleMobileMenu = () => {
-        setMobileMenu(!isMobileMenu)
-        !isMobileMenu ? document.body.classList.add("mobile-menu-visible") : document.body.classList.remove("mobile-menu-visible")
+    const pathname = usePathname()
+    
+    const openMobileMenu = () => {
+      if (!isMobileMenu) {
+        setMobileMenu(true)
+        document.body.classList.add('mobile-menu-visible')
+      }
     }
+  
+    const closeMobileMenu = () => {
+      if (isMobileMenu) {
+        setMobileMenu(false)
+        document.body.classList.remove('mobile-menu-visible')
+      } else {
+        // por si quedara “pegada” la clase tras refresh
+        document.body.classList.remove('mobile-menu-visible')
+      }
+    }
+    
+    const handleMobileMenu = () => {
+      setMobileMenu(!isMobileMenu)
+      !isMobileMenu
+        ? document.body.classList.add("mobile-menu-visible")
+        : document.body.classList.remove("mobile-menu-visible")
+    }
+    
+    // Cerrar SOLO cuando cambia la ruta
+  useEffect(() => {
+      if (isMobileMenu) closeMobileMenu()
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [pathname])
+
+    // Al cargar/recargar la página, asegurar cerrado
+    useEffect(() => {
+      closeMobileMenu()
+      // (opcional) por si el navegador restaura estado en back/forward cache:
+      const handler = () => closeMobileMenu()
+      window.addEventListener('pageshow', handler)
+      return () => window.removeEventListener('pageshow', handler)
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     // Popup
     const [isPopup, setPopup] = useState(false)
