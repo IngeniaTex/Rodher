@@ -32,7 +32,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     <span className="mobile-nav__close mobile-nav__toggler" onClick={handleMobileMenu} ><i className="fa fa-times"></i></span>
 
                     <div className="logo-box">
-                        <Link href="/" aria-label="logo image"><img src="assets/images/resources/logo-1-rodher.png" width="150" alt="" /></Link>
+                        <Link href="/" aria-label="logo image"><img src="assets/images/resources/logo-2-rodher.png" width="150" alt="" /></Link>
                     </div>
 
                     <div className="mobile-nav__container">
@@ -50,7 +50,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                     <button className={isActive.key == 3 ? "expanded open" : ""} onClick={() => handleToggle(3)}><span className="fa fa-angle-right" /></button>
                                 </li>
                                 <li className={isActive.key == 4 ? "dropdown current" : "dropdown"}><Link href="/#">Productos</Link>
-                                    <ul style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>                                 
+                                    <ul style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>                                 
                                         <li><Link href="productos-paneles-solares">Paneles Solares</Link></li>
                                         <li><Link href="productos-equipos-bombeo">Equipos de Bombeo</Link></li>
                                         <li><Link href="productos-sistemas-cloracion">Sistemas de Cloración</Link></li>

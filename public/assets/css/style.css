@@ -1442,6 +1442,8 @@ ul {
 --------------------------------------------------------------*/
 .mobile-nav__wrapper {
   position: fixed;
+  display: none;
+  visibility: hidden;
   top: 0;
   left: 0;
   width: 100vw;
@@ -1465,8 +1467,9 @@ ul {
 
 .mobile-menu-visible .mobile-nav__wrapper {
   opacity: 1;
+  display: block;
   -webkit-transform: translateX(0%);
-  transform: translateX(0%);
+  transform: translateX(0);
   visibility: visible;
   -webkit-transition: visibility 500ms ease 0ms, -webkit-transform 500ms ease 0ms;
   transition: visibility 500ms ease 0ms, -webkit-transform 500ms ease 0ms;
