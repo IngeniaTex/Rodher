@@ -30,7 +30,7 @@ export default function Home() {
                                 <span className="icon-envelope"></span>
                             </div>
                             <p style={{ textAlign: "center" }}>Escribenos</p>
-                            <h3><Link href="mailto:example@gamil.com">ventas@rodheringenieria.com</Link></h3>
+                            <h3><Link href="mailto:ventas@rodheringenieria.com.mx">ventas@rodheringenieria.com.mx</Link></h3>
                         </div>
                     </div>
                     {/*Contact Two Single End*/}

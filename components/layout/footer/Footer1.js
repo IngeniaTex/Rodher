@@ -64,7 +64,7 @@ export default function Footer1() {
                                     <li>
                                         <h3>Correo</h3>
                                         <div className="content">
-                                        <p><Link href="mailto:example@gmail.com">ventas@rodheringenieria.com</Link></p>
+                                        <p><Link href="mailto:ventas@rodheringenieria.com.mx">ventas@rodheringenieria.com.mx</Link></p>
                                         </div>
                                     </li>
                                     <li>
