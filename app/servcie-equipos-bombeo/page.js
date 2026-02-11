@@ -138,7 +138,7 @@ export default function Home() {
                                         <div className="icon">
                                             <span className="icon-envelope"></span>
                                         </div>
-                                        <p><Link href="mailto:example@gmail.com">ventas@rodheringenieria.com</Link></p>
+                                        <p><Link href="mailto:ventas@rodheringenieria.com.mx">ventas@rodheringenieria.com.mx</Link></p>
                                     </li>
                                     <li>
                                         <div className="icon">

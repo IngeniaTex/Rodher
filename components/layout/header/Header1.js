@@ -34,7 +34,7 @@ export default function Header2({ scroll, handleMobileMenu }) {
                                     <i className="icon-envelope"></i>
                                 </div>
                                 <div className="text">
-                                    <p><Link href="mailto:ventas@rodheringenieria.com">ventas@rodheringenieria.com</Link>
+                                    <p><Link href="mailto:ventas@rodheringenieria.com.mx">ventas@rodheringenieria.com.mx</Link>
                                     </p>
                                 </div>
                             </li>
