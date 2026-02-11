@@ -96,6 +96,7 @@
     color: var(--erepair-white);
     margin-top: 11px;
     -webkit-transition: all 500ms ease;
+    text-align: center;
     transition: all 500ms ease;
 }
 
