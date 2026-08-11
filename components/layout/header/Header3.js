@@ -14,7 +14,7 @@ export default function Header3({ scroll, handlePopup, handleMobileMenu  }) {
                                 <i className="icon-call"></i>
                             </div>
                             <div className="text">
-                                <p> <span>Talk to us</span> <Link href="tel:9288006780">+92 ( 8800 ) - 6780</Link></p>
+                                <p> <span>Talk to us</span> <Link href="tel:9999001393">+52 999 900 1393</Link></p>
                             </div>
                         </li>
                         <li>

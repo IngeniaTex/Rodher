@@ -19,7 +19,7 @@ export default function Home() {
                                 <span className="icon-call"></span>
                             </div>
                             <p style={{ textAlign: "center" }}>Llámanos</p>
-                            <h3><Link href="tel:558270575405">+52 999 900 1393</Link></h3>
+                            <h3><Link href="tel:9999001393">+52 999 900 1393</Link></h3>
                         </div>
                     </div>
                     {/*Contact Two Single End*/}

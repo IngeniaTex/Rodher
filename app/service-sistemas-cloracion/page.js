@@ -139,7 +139,7 @@ export default function Home() {
                                         <div className="icon">
                                             <span className="icon-call"></span>
                                         </div>
-                                        <p><Link href="tel:585858575084">+52 999 900 1393</Link></p>
+                                        <p><Link href="tel:9999001393">+52 999 900 1393</Link></p>
                                     </li>
                                     <li>
                                         <div className="icon">

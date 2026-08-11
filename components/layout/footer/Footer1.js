@@ -70,7 +70,7 @@ export default function Footer1() {
                                     <li>
                                         <h3>Teléfono</h3>
                                         <div className="content">
-                                            <p><Link href="tel:8528525285505">+52 999 900 1393</Link></p>
+                                            <p><Link href="tel:9999001393">+52 999 900 1393</Link></p>
                                             
                                         </div>
                                     </li>

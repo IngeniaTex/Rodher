@@ -27,7 +27,7 @@ export default function Footer2() {
                                         </div>
                                         <div className="content">
                                             <h3>Contact</h3>
-                                            <p><Link href="tel:885747546027">(88) 574 7546 027</Link></p>
+                                            <p><Link href="tel:9999001393">+52 999 900 1393</Link></p>
                                         </div>
                                     </li>
                                     <li>

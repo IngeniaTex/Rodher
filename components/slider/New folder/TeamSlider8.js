@@ -71,7 +71,7 @@ export default function TeamSlider8() {
                                         <span className="icon-speech-bubble clr8" />
                                     </div>
                                     <div className="text">
-                                        <p><Link href="tel:+18005554400">+44 555 66 789</Link></p>
+                                        <p><Link href="tel:9999001393">+52 999 900 1393</Link></p>
                                         <p><Link href="mailto:support@envolvepsyco.com">alphonso@envolve.com</Link>
                                         </p>
                                     </div>
@@ -95,7 +95,7 @@ export default function TeamSlider8() {
                                         <span className="icon-speech-bubble clr8" />
                                     </div>
                                     <div className="text">
-                                        <p><Link href="tel:+18005554400">+44 555 66 789</Link></p>
+                                        <p><Link href="tel:9999001393">+44 555 66 789</Link></p>
                                         <p><Link href="mailto:support@envolvepsyco.com">alphonso@envolve.com</Link>
                                         </p>
                                     </div>
@@ -119,7 +119,7 @@ export default function TeamSlider8() {
                                         <span className="icon-speech-bubble clr8" />
                                     </div>
                                     <div className="text">
-                                        <p><Link href="tel:+18005554400">+44 555 66 789</Link></p>
+                                        <p><Link href="tel:9999001393">+44 555 66 789</Link></p>
                                         <p><Link href="mailto:support@envolvepsyco.com">alphonso@envolve.com</Link>
                                         </p>
                                     </div>
@@ -143,7 +143,7 @@ export default function TeamSlider8() {
                                         <span className="icon-speech-bubble clr8" />
                                     </div>
                                     <div className="text">
-                                        <p><Link href="tel:+18005554400">+44 555 66 789</Link></p>
+                                        <p><Link href="tel:9999001393">+44 555 66 789</Link></p>
                                         <p><Link href="mailto:support@envolvepsyco.com">alphonso@envolve.com</Link>
                                         </p>
                                     </div>
@@ -167,7 +167,7 @@ export default function TeamSlider8() {
                                         <span className="icon-speech-bubble clr8" />
                                     </div>
                                     <div className="text">
-                                        <p><Link href="tel:+18005554400">+44 555 66 789</Link></p>
+                                        <p><Link href="tel:9999001393">+44 555 66 789</Link></p>
                                         <p><Link href="mailto:support@envolvepsyco.com">alphonso@envolve.com</Link>
                                         </p>
                                     </div>
@@ -191,7 +191,7 @@ export default function TeamSlider8() {
                                         <span className="icon-speech-bubble clr8" />
                                     </div>
                                     <div className="text">
-                                        <p><Link href="tel:+18005554400">+44 555 66 789</Link></p>
+                                        <p><Link href="tel:9999001393">+44 555 66 789</Link></p>
                                         <p><Link href="mailto:support@envolvepsyco.com">alphonso@envolve.com</Link>
                                         </p>
                                     </div>
@@ -215,7 +215,7 @@ export default function TeamSlider8() {
                                         <span className="icon-speech-bubble clr8" />
                                     </div>
                                     <div className="text">
-                                        <p><Link href="tel:+18005554400">+44 555 66 789</Link></p>
+                                        <p><Link href="tel:9999001393">+44 555 66 789</Link></p>
                                         <p><Link href="mailto:support@envolvepsyco.com">alphonso@envolve.com</Link>
                                         </p>
                                     </div>
@@ -239,7 +239,7 @@ export default function TeamSlider8() {
                                         <span className="icon-speech-bubble clr8" />
                                     </div>
                                     <div className="text">
-                                        <p><Link href="tel:+18005554400">+44 555 66 789</Link></p>
+                                        <p><Link href="tel:9999001393">+44 555 66 789</Link></p>
                                         <p><Link href="mailto:support@envolvepsyco.com">alphonso@envolve.com</Link>
                                         </p>
                                     </div>
@@ -263,7 +263,7 @@ export default function TeamSlider8() {
                                         <span className="icon-speech-bubble clr8" />
                                     </div>
                                     <div className="text">
-                                        <p><Link href="tel:+18005554400">+44 555 66 789</Link></p>
+                                        <p><Link href="tel:9999001393">+44 555 66 789</Link></p>
                                         <p><Link href="mailto:support@envolvepsyco.com">alphonso@envolve.com</Link>
                                         </p>
                                     </div>
