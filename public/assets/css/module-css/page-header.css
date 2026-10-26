@@ -40,6 +40,7 @@
     z-index: 15;
 }
 
+.page-header__inner h1,
 .page-header__inner h3 {
     font-size: 60px;
     color: var(--erepair-black);

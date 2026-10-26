@@ -1,15 +1,16 @@
 import Layout from "@/components/layout/Layout"
 import Banner from "@/components/sections/promociones/Banner"
-import Cta from "@/components/sections/home1/Cta"
 
-export default function Home() {
+export const metadata = {
+    title: "Promociones",
+    description: "Promociones y descuentos especiales en venta e instalación de paneles solares en Mérida y Yucatán.",
+    alternates: { canonical: "/promociones" },
+}
 
+export default function PromocionesPage() {
     return (
-        <>
-            <Layout headerStyle={1} footerStyle={4} breadcrumbTitle="Promociones">
-                <Banner />
-            </Layout>
-
-        </>
+        <Layout breadcrumbTitle="Promociones" footerVariant="two">
+            <Banner />
+        </Layout>
     )
 }
