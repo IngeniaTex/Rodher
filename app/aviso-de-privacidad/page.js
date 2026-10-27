@@ -17,7 +17,11 @@ const LAST_UPDATE = "26 de octubre de 2026"
 
 export default function AvisoPrivacidadPage() {
     return (
-        <Layout breadcrumbTitle="Aviso de Privacidad" footerVariant="two">
+        <Layout
+            breadcrumbTitle="Aviso de Privacidad"
+            footerVariant="two"
+            pageHeader={{ image: "/assets/images/headers/aviso-de-privacidad.webp", eyebrow: "Legal" }}
+        >
             <section style={{ padding: "100px 0" }}>
                 <div className="container" style={{ maxWidth: 900 }}>
                     <p><strong>Última actualización:</strong> {LAST_UPDATE}</p>

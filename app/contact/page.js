@@ -17,7 +17,14 @@ const CARDS = [
 
 export default function ContactPage() {
     return (
-        <Layout breadcrumbTitle="Contacto">
+        <Layout
+            breadcrumbTitle="Contacto"
+            pageHeader={{
+                image: "/assets/images/headers/contacto.webp",
+                eyebrow: "Hablemos de tu proyecto",
+                text: "Escríbenos o llámanos y te preparamos una cotización a la medida de tu consumo.",
+            }}
+        >
             {/*Contact Two Start*/}
             <section className="contact-two">
                 <div className="container">

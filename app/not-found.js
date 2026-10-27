@@ -9,7 +9,10 @@ export const metadata = {
 
 export default function NotFound() {
     return (
-        <Layout breadcrumbTitle="Página no encontrada">
+        <Layout
+            breadcrumbTitle="Página no encontrada"
+            pageHeader={{ image: "/assets/images/headers/no-encontrada.webp", eyebrow: "Error 404" }}
+        >
             <section className="error-page">
                 <div className="container">
                     <div className="row">

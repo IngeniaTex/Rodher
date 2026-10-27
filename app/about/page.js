@@ -19,7 +19,14 @@ const COUNTERS = [
 
 export default function AboutPage() {
     return (
-        <Layout breadcrumbTitle="Quiénes Somos">
+        <Layout
+            breadcrumbTitle="Quiénes Somos"
+            pageHeader={{
+                image: "/assets/images/headers/nosotros.webp",
+                eyebrow: `Desde ${SITE.foundingYear}`,
+                text: "Soluciones integrales en energía solar, bombeo y tratamiento de agua en Yucatán y el sureste de México.",
+            }}
+        >
             {/*About One Start */}
             <section className="about-one about-four">
                 <div className="about-one__shape-one float-bob-y">

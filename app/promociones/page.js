@@ -9,7 +9,15 @@ export const metadata = {
 
 export default function PromocionesPage() {
     return (
-        <Layout breadcrumbTitle="Promociones" footerVariant="two">
+        <Layout
+            breadcrumbTitle="Promociones"
+            footerVariant="two"
+            pageHeader={{
+                image: "/assets/images/headers/promociones.webp",
+                eyebrow: "Promociones vigentes",
+                text: "Descuentos y precios especiales en venta e instalación de paneles solares.",
+            }}
+        >
             <Banner />
         </Layout>
     )

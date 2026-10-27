@@ -10,7 +10,15 @@ export const metadata = {
 
 export default function ProductosPage() {
     return (
-        <Layout breadcrumbTitle="Productos" footerVariant="two">
+        <Layout
+            breadcrumbTitle="Productos"
+            footerVariant="two"
+            pageHeader={{
+                image: "/assets/images/headers/productos.webp",
+                eyebrow: "Catálogo",
+                text: "Paneles solares, equipos de bombeo y sistemas de cloración. Cotiza el equipo que necesitas.",
+            }}
+        >
             <section className="shop-page-one">
                 <div className="container">
                     <div className="row">

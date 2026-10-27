@@ -26,7 +26,15 @@ export default async function ServicioPage({ params }) {
     if (!servicio) notFound()
 
     return (
-        <Layout breadcrumbTitle={servicio.title}>
+        <Layout
+            breadcrumbTitle={servicio.title}
+            pageHeader={{
+                image: servicio.headerImage,
+                eyebrow: servicio.subtitle,
+                text: servicio.summary,
+                crumbs: [{ label: "Servicios", href: "/servicios" }],
+            }}
+        >
             <ServiceDetail servicio={servicio} />
             <Cta />
         </Layout>

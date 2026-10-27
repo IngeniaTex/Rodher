@@ -24,7 +24,16 @@ export default async function CategoriaPage({ params }) {
     if (!categoria) notFound()
 
     return (
-        <Layout breadcrumbTitle={categoria.title} footerVariant="two">
+        <Layout
+            breadcrumbTitle={categoria.title}
+            footerVariant="two"
+            pageHeader={{
+                image: categoria.image,
+                eyebrow: "Catálogo",
+                text: categoria.description,
+                crumbs: [{ label: "Productos", href: "/productos" }],
+            }}
+        >
             <ProductGrid categoria={categoria} />
         </Layout>
     )

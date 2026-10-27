@@ -31,7 +31,18 @@ export default async function ProductoPage({ params }) {
     const image = producto.image || categoria.image
 
     return (
-        <Layout breadcrumbTitle={producto.title} footerVariant="two">
+        <Layout
+            breadcrumbTitle={producto.title}
+            footerVariant="two"
+            pageHeader={{
+                image,
+                eyebrow: categoria.title,
+                crumbs: [
+                    { label: "Productos", href: "/productos" },
+                    { label: categoria.title, href: `/productos/${categoria.slug}` },
+                ],
+            }}
+        >
             <section className="shop-details-page1">
                 <div className="container">
                     <div className="row">

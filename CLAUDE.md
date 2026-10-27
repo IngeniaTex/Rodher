@@ -34,7 +34,7 @@ app/
   api/contact/route.js   # recibe los dos formularios (contacto y cotización de producto)
   sitemap.js, robots.js, not-found.js
 components/
-  layout/        # Layout (envoltorio de cada página), Header, Footer, Menu, MobileMenu, Breadcrumb
+  layout/        # Layout (envoltorio de cada página), Header, Footer, Menu, MobileMenu, PageHeader
   sections/      # Cta (promociones, en todas las páginas), ServiceCards, ServiceDetail, ProductGrid, home/* (Banner = hero), promociones/*
   forms/         # useLeadForm (estado + honeypot + mensajes), ProductForm
   elements/      # WhatsAppButton (variant "filled" | "dark" | "icon"), SocialLinks, CounterUp, BackToTop, Preloader
@@ -45,7 +45,7 @@ next.config.js   # redirects 308 de URLs antiguas
 
 - **Contenido como datos:** para agregar un servicio, producto o enlace del menú edita `lib/*.js`; las páginas, el menú, el footer y el sitemap se generan de ahí. No escribas teléfono, correo o WhatsApp a mano: usa `SITE`.
 - Las páginas son Server Components y exportan `metadata` (o `generateMetadata`). Solo los componentes con estado/efectos llevan `'use client'`. En rutas dinámicas `params` es una Promise (`await params`).
-- Cada página envuelve su contenido en `<Layout breadcrumbTitle="...">`. El `breadcrumbTitle` se renderiza como el `<h1>` de la página (la home lo pone en el primer slide del banner).
+- Cada página envuelve su contenido en `<Layout breadcrumbTitle="..." pageHeader={{ image, eyebrow, text, crumbs }}>`. `breadcrumbTitle` es el `<h1>` del encabezado (`PageHeader`: foto a todo lo ancho + ruta de navegación con JSON-LD `BreadcrumbList`); la home no lo usa y pone el `<h1>` en el primer slide del hero. Las fotos de encabezado van en `/assets/images/headers/` (1920×640); los servicios lo toman de `headerImage` en `lib/servicios.js`.
 - El footer normal tiene `margin-top: -293px` para montarse sobre el `<Cta />`. Si la página **no termina en `<Cta />`**, usa `footerVariant="two"` o el footer tapará el final del contenido.
 - Marcado con las clases BEM de la plantilla (`service-details__...`, `shop-page-one-...`, `thm-btn`). Reutiliza clases existentes; estilos propios (WhatsApp, cookies, Cta de promociones) al final de `style.css`. El hero de la home (`hero-solar__*`) tiene su propio `module-css/hero.css`.
 - Hero (`components/sections/home/Banner.js`): cada slide se define en `SLIDES` (foto, título, texto, botones y tarjeta). Fotos de fondo en `/assets/images/hero/`, 1920 px de ancho. Solo el primer slide lleva `<h1>`.
@@ -62,7 +62,7 @@ Variables de entorno: `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `MAIL_
 
 ## Contenido pendiente (marcado con `TODO`)
 
-Fotos y fichas reales de productos y de bombeo/cloración, testimonios reales, redes sociales (`SOCIAL`), razón social y domicilio del aviso de privacidad.
+Fotos y fichas reales de productos; las fotos de bombeo y cloración son generadas con IA (Canva) y conviene cambiarlas por fotos de proyectos reales. Testimonios reales, URLs de redes sociales (`SOCIAL`, hoy sin `href`), razón social y domicilio del aviso de privacidad.
 
 ## Git
 

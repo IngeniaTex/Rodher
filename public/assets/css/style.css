@@ -4997,11 +4997,6 @@ ul {
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {}
-/* Títulos largos (p. ej. nombres de producto) no deben encimarse con la ilustración del encabezado */
-.page-header__inner h1 {
-    max-width: 640px;
-}
-
 /* Lista de características en el detalle de producto */
 .shop-details-page1__features {
     list-style: disc;
@@ -5111,4 +5106,9 @@ ul {
     .cta-one__inner--promo {
         padding: 48px 20px;
     }
+}
+
+/* Redes sin enlace todavía: mismo aspecto que un enlace normal */
+.social-link--pending {
+    cursor: pointer;
 }

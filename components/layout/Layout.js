@@ -3,11 +3,13 @@ import { useEffect, useState } from "react"
 import { usePathname } from "next/navigation"
 
 import BackToTop from "../elements/BackToTop"
-import Breadcrumb from "./Breadcrumb"
+import PageHeader from "./PageHeader"
 import Header from "./Header"
 import Footer from "./Footer"
 
-export default function Layout({ breadcrumbTitle, footerVariant, wrapperCls, children }) {
+// breadcrumbTitle: título (<h1>) del encabezado de la página.
+// pageHeader: { image, eyebrow, text, crumbs: [{ label, href }] } — foto y textos del encabezado.
+export default function Layout({ breadcrumbTitle, pageHeader, footerVariant, wrapperCls, children }) {
     const [scroll, setScroll] = useState(false)
     const [isMobileMenu, setMobileMenu] = useState(false)
     const pathname = usePathname()
@@ -52,7 +54,7 @@ export default function Layout({ breadcrumbTitle, footerVariant, wrapperCls, chi
             <div className={`page-wrapper ${wrapperCls || ""}`} id="top">
                 <Header scroll={scroll} handleMobileMenu={handleMobileMenu} />
 
-                {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
+                {breadcrumbTitle && <PageHeader title={breadcrumbTitle} {...pageHeader} />}
 
                 <main>{children}</main>
 
