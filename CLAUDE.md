@@ -22,7 +22,7 @@ npm run lint    # ESLint 9 (eslint.config.mjs, reglas de next/core-web-vitals)
 
 ```
 lib/
-  site.js        # SITE (nombre, URL, teléfono, WhatsApp, correo, ubicación), SOCIAL, NAV
+  site.js        # SITE (nombre, URL, teléfono, WhatsApp, correo, ubicación), STATS (cifras del hero y /about), SOCIAL, NAV
   servicios.js   # contenido de /servicios/[slug]
   productos.js   # catálogo: categorías y productos de /productos/...
   mailer.js      # envío SMTP, escapeHtml, límite por IP
@@ -35,9 +35,9 @@ app/
   sitemap.js, robots.js, not-found.js
 components/
   layout/        # Layout (envoltorio de cada página), Header, Footer, Menu, MobileMenu, Breadcrumb
-  sections/      # Cta, ServiceCards, ServiceDetail, ProductGrid, home/*, promociones/*
+  sections/      # Cta (promociones, en todas las páginas), ServiceCards, ServiceDetail, ProductGrid, home/* (Banner = hero), promociones/*
   forms/         # useLeadForm (estado + honeypot + mensajes), ProductForm
-  elements/      # WhatsAppButton, SocialLinks, CounterUp, BackToTop, Preloader
+  elements/      # WhatsAppButton (variant "filled" | "dark" | "icon"), SocialLinks, CounterUp, BackToTop, Preloader
 next.config.js   # redirects 308 de URLs antiguas
 ```
 
@@ -47,7 +47,9 @@ next.config.js   # redirects 308 de URLs antiguas
 - Las páginas son Server Components y exportan `metadata` (o `generateMetadata`). Solo los componentes con estado/efectos llevan `'use client'`. En rutas dinámicas `params` es una Promise (`await params`).
 - Cada página envuelve su contenido en `<Layout breadcrumbTitle="...">`. El `breadcrumbTitle` se renderiza como el `<h1>` de la página (la home lo pone en el primer slide del banner).
 - El footer normal tiene `margin-top: -293px` para montarse sobre el `<Cta />`. Si la página **no termina en `<Cta />`**, usa `footerVariant="two"` o el footer tapará el final del contenido.
-- Marcado con las clases BEM de la plantilla (`service-details__...`, `shop-page-one-...`, `thm-btn`). Reutiliza clases existentes; estilos propios (WhatsApp, cookies) al final de `style.css`.
+- Marcado con las clases BEM de la plantilla (`service-details__...`, `shop-page-one-...`, `thm-btn`). Reutiliza clases existentes; estilos propios (WhatsApp, cookies, Cta de promociones) al final de `style.css`. El hero de la home (`hero-solar__*`) tiene su propio `module-css/hero.css`.
+- Hero (`components/sections/home/Banner.js`): cada slide se define en `SLIDES` (foto, título, texto, botones y tarjeta). Fotos de fondo en `/assets/images/hero/`, 1920 px de ancho. Solo el primer slide lleva `<h1>`.
+- Favicons en `/assets/images/favicons/` (ondas del logo sobre fondo #171717), generados con `sharp` desde el logo; el manifest es `site.webmanifest` en esa misma carpeta.
 - Imágenes: rutas absolutas `/assets/images/...`. Fotos en WebP (convertir con `sharp`, ya incluido por Next); logos y formas decorativas en PNG. `<img>` normal con `loading="lazy"` debajo del pliegue (la regla `no-img-element` está desactivada a propósito).
 - Las rutas nuevas de servicios/productos reemplazan URLs antiguas; si renombras una ruta, agrega el redirect en `next.config.js`.
 - Comentarios y textos de UI en español.

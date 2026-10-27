@@ -1,6 +1,7 @@
 import "@/public/assets/css/style.css"
 import "swiper/css"
 import "swiper/css/pagination"
+import "swiper/css/effect-fade"
 import CookieConsent from "@/components/CookieConsent"
 import { archivo, titilliumWeb, pacifico } from "@/lib/font"
 import { SITE } from "@/lib/site"
@@ -16,7 +17,7 @@ export const metadata = {
         type: "website",
         locale: "es_MX",
         siteName: SITE.name,
-        images: ["/assets/images/backgrounds/paneles-solares.webp"],
+        images: ["/assets/images/hero/energia-solar-hogar.webp"],
     },
     icons: {
         icon: [
@@ -36,7 +37,7 @@ const localBusiness = {
     description: SITE.description,
     url: SITE.url,
     logo: `${SITE.url}/assets/images/resources/logo-1-rodher.png`,
-    image: `${SITE.url}/assets/images/backgrounds/paneles-solares.webp`,
+    image: `${SITE.url}/assets/images/hero/energia-solar-hogar.webp`,
     email: SITE.email,
     telephone: SITE.phone.display,
     foundingDate: String(SITE.foundingYear),

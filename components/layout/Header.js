@@ -15,6 +15,7 @@ function MainNav({ handleMobileMenu }) {
                             <Link href="/"><img src="/assets/images/resources/logo-1-rodher.png" alt={SITE.name} /></Link>
                         </div>
                         <div className="main-menu-two__main-menu-box">
+                            <WhatsAppButton variant="icon" className="main-menu-two__whatsapp-mobile" />
                             <a href="#" className="mobile-nav__toggler" onClick={(e) => { e.preventDefault(); handleMobileMenu() }} aria-label="Abrir menú">
                                 <i className="fa fa-bars"></i>
                             </a>
@@ -23,9 +24,7 @@ function MainNav({ handleMobileMenu }) {
                     </div>
                     <div className="main-menu-two__right">
                         <div className="main-menu-two__call-and-btn-box">
-                            <div className="main-menu-two__call">
-                                <WhatsAppButton variant="dark" />
-                            </div>
+                            <WhatsAppButton variant="icon" />
                             <div className="main-menu-two__btn-box">
                                 <Link href="/contact" className="main-menu-two__btn thm-btn">Cotizaciones</Link>
                             </div>

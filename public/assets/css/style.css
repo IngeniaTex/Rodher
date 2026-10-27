@@ -29,7 +29,7 @@
 @import url('module-css/project.css');
 @import url('module-css/service.css');
 @import url('module-css/shop.css');
-@import url('module-css/slider.css');
+@import url('module-css/hero.css');
 @import url('module-css/testimonial.css');
 @import url('module-css/video.css');
 
@@ -5006,4 +5006,109 @@ ul {
 .shop-details-page1__features {
     list-style: disc;
     padding-left: 20px;
+}
+
+/* Botón circular de WhatsApp (solo ícono) en el header */
+.whatsapp-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #25D366;
+    color: #ffffff;
+    font-size: 26px;
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+    transition: transform 300ms ease, background-color 300ms ease, box-shadow 300ms ease;
+}
+
+.whatsapp-icon:hover {
+    background-color: #1ebe5a;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(37, 211, 102, 0.45);
+}
+
+.main-menu-two__call-and-btn-box {
+    gap: 16px;
+}
+
+/* En celular el bloque derecho del header se oculta: el círculo va junto al menú */
+.main-menu-two__whatsapp-mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .main-menu-two__main-menu-box {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .main-menu-two__whatsapp-mobile {
+        display: inline-flex;
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+}
+
+/* Sección de promociones (Cta): texto + imagen publicitaria en dos columnas */
+.cta-one__inner--promo {
+    padding: 64px 64px 64px 90px;
+}
+
+.cta-one__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+    gap: 56px;
+    align-items: center;
+}
+
+.cta-one__promo {
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 50px rgba(23, 23, 23, 0.22);
+    transition: transform 400ms ease, box-shadow 400ms ease;
+}
+
+.cta-one__promo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cta-one__promo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px rgba(23, 23, 23, 0.28);
+}
+
+@media (max-width: 1199px) {
+    .cta-one__inner--promo {
+        padding: 56px 40px;
+    }
+
+    .cta-one__grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 400px);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .cta-one__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-one__promo {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cta-one__inner--promo {
+        padding: 48px 20px;
+    }
 }

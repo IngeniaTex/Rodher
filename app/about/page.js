@@ -2,7 +2,7 @@ import Link from "next/link"
 import CounterUp from "@/components/elements/CounterUp"
 import Layout from "@/components/layout/Layout"
 import Cta from "@/components/sections/Cta"
-import { SITE } from "@/lib/site"
+import { SITE, STATS } from "@/lib/site"
 
 export const metadata = {
     title: "Nosotros",
@@ -11,10 +11,10 @@ export const metadata = {
 }
 
 const COUNTERS = [
-    { icon: "icon-hands-on-experience", end: new Date().getFullYear() - SITE.foundingYear, label: "Años de experiencia", animation: "fadeInLeft", extraCls: " counter-one__single-1" },
-    { icon: "icon-technician-1", end: 10, label: "Proveedores", animation: "fadeInUp" },
-    { icon: "icon-project-complete", end: 80, label: "Proyectos completados", animation: "fadeInUp" },
-    { icon: "icon-happy-customer", end: 50, label: "Clientes satisfechos", animation: "fadeInRight" },
+    { icon: "icon-hands-on-experience", end: STATS.yearsOfExperience, label: "Años de experiencia", animation: "fadeInLeft", extraCls: " counter-one__single-1" },
+    { icon: "icon-technician-1", end: STATS.proveedores, label: "Proveedores", animation: "fadeInUp" },
+    { icon: "icon-project-complete", end: STATS.proyectos, label: "Proyectos completados", animation: "fadeInUp" },
+    { icon: "icon-happy-customer", end: STATS.clientes, label: "Clientes satisfechos", animation: "fadeInRight" },
 ]
 
 export default function AboutPage() {

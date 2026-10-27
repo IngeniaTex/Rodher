@@ -1,12 +1,12 @@
-// TODO: agregar más proyectos con fotos y ubicaciones reales.
+// Proyectos reales. Para agregar uno, sube las fotos a /assets/images/project/ (WebP, 1200 px de ancho).
 const PROYECTOS = [
-    { image: "/assets/images/project/projecto-paneles-1.webp", category: "Paneles Solares", title: "Residencial Altabrisa", cols: "col-xl-6 col-lg-6 col-md-6", animation: "fadeInLeft" },
-    { image: "/assets/images/project/projecto-paneles-2.webp", category: "Paneles Solares", title: "Residencial Altabrisa", cols: "col-xl-6 col-lg-6 col-md-6", animation: "fadeInRight" },
+    { image: "/assets/images/project/restaurante-escandon-azotea.webp", category: "Paneles solares en azotea", title: "Restaurante Escandón", cols: "col-xl-6 col-lg-6 col-md-6", animation: "fadeInLeft" },
+    { image: "/assets/images/project/restaurante-escandon-inversor.webp", category: "Inversor Growatt y protecciones", title: "Restaurante Escandón", cols: "col-xl-6 col-lg-6 col-md-6", animation: "fadeInRight" },
 ]
 
 export default function Project() {
     return (
-        <section className="project-one">
+        <section className="project-one" id="proyectos">
             <div className="container">
                 <div className="project-one__top">
                     <div className="section-title text-left">
