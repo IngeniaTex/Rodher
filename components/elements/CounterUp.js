@@ -1,31 +1,32 @@
 'use client'
-import { useEffect, useState } from 'react'
-import Counter from './Counter'
+import { useEffect, useRef, useState } from 'react'
 
+const DURATION_MS = 1500
+
+// Cuenta de 0 a `end` cuando el número entra en pantalla.
 export default function CounterUp({ end }) {
-    const [inViewport, setInViewport] = useState(false)
-
-    const handleScroll = () => {
-        const elements = document.getElementsByClassName('count-text')
-        if (elements.length > 0) {
-            const element = elements[0]
-            const rect = element.getBoundingClientRect()
-            const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight
-            if (isInViewport && !inViewport) {
-                setInViewport(true)
-            }
-        }
-    }
+    const ref = useRef(null)
+    const [count, setCount] = useState(0)
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+        let frame
+        const observer = new IntersectionObserver(([entry]) => {
+            if (!entry.isIntersecting) return
+            observer.disconnect()
+            const start = performance.now()
+            const tick = (now) => {
+                const progress = Math.min((now - start) / DURATION_MS, 1)
+                setCount(Math.round(end * progress))
+                if (progress < 1) frame = requestAnimationFrame(tick)
+            }
+            frame = requestAnimationFrame(tick)
+        })
+        observer.observe(ref.current)
         return () => {
-            window.removeEventListener('scroll', handleScroll)
+            observer.disconnect()
+            cancelAnimationFrame(frame)
         }
-    }, [])
-    return (
-        <>
-            <span className="count-text">{inViewport && <Counter end={end} duration={20} />}</span>
-        </>
-    )
+    }, [end])
+
+    return <span className="count-text" ref={ref}>{count}</span>
 }

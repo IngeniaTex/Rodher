@@ -1,91 +1,71 @@
 'use client'
-import Link from "next/link";
-import { useState } from "react";
+import Link from "next/link"
+import { useState } from "react"
+import SocialLinks from "@/components/elements/SocialLinks"
+import { NAV, SITE } from "@/lib/site"
 
-const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
-  const [isActive, setIsActive] = useState({
-    status: false,
-    key: "",
-    subMenuKey: "",
-  });
+export default function MobileMenu({ handleMobileMenu }) {
+    const [openKey, setOpenKey] = useState(null)
 
-  const handleToggle = (key, subMenuKey = "") => {
-    if (isActive.key === key && isActive.subMenuKey === subMenuKey) {
-      setIsActive({
-        status: false,
-        key: "",
-        subMenuKey: "",
-      });
-    } else {
-      setIsActive({
-        status: true,
-        key,
-        subMenuKey,
-      });
-    }
-  };
     return (
-        <>
-            <div className="mobile-nav__wrapper">
-                <div className="mobile-nav__overlay mobile-nav__toggler" onClick={handleMobileMenu} ></div>
-                <div className="mobile-nav__content">
-                    <span className="mobile-nav__close mobile-nav__toggler" onClick={handleMobileMenu} ><i className="fa fa-times"></i></span>
+        <div className="mobile-nav__wrapper">
+            <div className="mobile-nav__overlay mobile-nav__toggler" onClick={handleMobileMenu}></div>
+            <div className="mobile-nav__content">
+                <span className="mobile-nav__close mobile-nav__toggler" onClick={handleMobileMenu} role="button" aria-label="Cerrar menú">
+                    <i className="fa fa-times"></i>
+                </span>
 
-                    <div className="logo-box">
-                        <Link href="/" aria-label="logo image"><img src="assets/images/resources/logo-2-rodher.png" width="150" alt="" /></Link>
-                    </div>
+                <div className="logo-box">
+                    <Link href="/" aria-label={SITE.name}>
+                        <img src="/assets/images/resources/logo-2-rodher.png" width="150" alt={SITE.name} />
+                    </Link>
+                </div>
 
-                    <div className="mobile-nav__container">
-                        <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                            <ul className="main-menu__list">
-                                <li><Link href="/">Inicio</Link></li>
-                                <li><Link href="/about/">About</Link></li>
-                            
-                                <li className={isActive.key == 3 ? "dropdown current" : "dropdown"}><Link href="/#">Servicios</Link>
-                                    <ul style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>                                 
-                                        <li><Link href="paneles-solares">Paneles Solares</Link></li>
-                                        <li><Link href="servcie-equipos-bombeo">Equipos de Bombeo</Link></li>
-                                        <li><Link href="service-sistemas-cloracion">Sistemas de Cloración</Link></li>
-                                    </ul>
-                                    <button className={isActive.key == 3 ? "expanded open" : ""} onClick={() => handleToggle(3)}><span className="fa fa-angle-right" /></button>
-                                </li>
-                                <li className={isActive.key == 4 ? "dropdown current" : "dropdown"}><Link href="/#">Productos</Link>
-                                    <ul style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>                                 
-                                        <li><Link href="productos-paneles-solares">Paneles Solares</Link></li>
-                                        <li><Link href="productos-equipos-bombeo">Equipos de Bombeo</Link></li>
-                                        <li><Link href="productos-sistemas-cloracion">Sistemas de Cloración</Link></li>
-                                    </ul>
-                                    <button className={isActive.key == 4 ? "expanded open" : ""} onClick={() => handleToggle(4)}><span className="fa fa-angle-right" /></button>
-                                </li>
-
-                                <li><Link href="/contact">Contacto</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <ul className="mobile-nav__contact list-unstyled">
-                        <li>
-                            <i className="fa fa-envelope"></i>
-                            <Link href="mailto:ventas@rodheringenieria.com.mx">ventas@rodheringenieria.com.mx</Link>
-                        </li>
-                        <li>
-                            <i className="fa fa-phone-alt"></i>
-                            <Link href="tel:699 900 1393<">999 900 1393</Link>
-                        </li>
-                    </ul>
-                    <div className="mobile-nav__top">
-                        <div className="mobile-nav__social">
-                            <Link href="#" className="fab fa-twitter"></Link>
-                            <Link href="#" className="fab fa-facebook-square"></Link>
-                            <Link href="#" className="fab fa-pinterest-p"></Link>
-                            <Link href="#" className="fab fa-instagram"></Link>
-                        </div>
+                <div className="mobile-nav__container">
+                    <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                        <ul className="main-menu__list">
+                            {NAV.map((item) => {
+                                const isOpen = openKey === item.href
+                                if (!item.children) {
+                                    return <li key={item.href}><Link href={item.href}>{item.label}</Link></li>
+                                }
+                                return (
+                                    <li key={item.href} className={isOpen ? "dropdown current" : "dropdown"}>
+                                        <Link href={item.href}>{item.label}</Link>
+                                        <ul style={{ display: isOpen ? "block" : "none" }}>
+                                            {item.children.map((child) => (
+                                                <li key={child.href}><Link href={child.href}>{child.label}</Link></li>
+                                            ))}
+                                        </ul>
+                                        <button
+                                            type="button"
+                                            className={isOpen ? "expanded open" : ""}
+                                            onClick={() => setOpenKey(isOpen ? null : item.href)}
+                                            aria-label={`${isOpen ? "Cerrar" : "Abrir"} ${item.label}`}
+                                            aria-expanded={isOpen}
+                                        >
+                                            <span className="fa fa-angle-right" />
+                                        </button>
+                                    </li>
+                                )
+                            })}
+                        </ul>
                     </div>
                 </div>
+                <ul className="mobile-nav__contact list-unstyled">
+                    <li>
+                        <i className="fa fa-envelope"></i>
+                        <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+                    </li>
+                    <li>
+                        <i className="fa fa-phone-alt"></i>
+                        <a href={SITE.phone.href}>{SITE.phone.display}</a>
+                    </li>
+                </ul>
+                <div className="mobile-nav__top">
+                    <SocialLinks className="mobile-nav__social" />
+                </div>
             </div>
-
-          
-
-        </>
+        </div>
     )
 }
-export default MobileMenu;

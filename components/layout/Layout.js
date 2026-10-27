@@ -1,111 +1,64 @@
-
 'use client'
 import { useEffect, useState } from "react"
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation"
 
-import BackToTop from '../elements/BackToTop'
-import DataBg from "../elements/DataBg"
-import Breadcrumb from './Breadcrumb'
-import SearchPopup from "./SearchPopup"
-import Sidebar from "./Sidebar"
-import Header1 from "./header/Header1"
-import Header2 from './header/Header2'
-import Header3 from "./header/Header3"
-import Footer1 from './footer/Footer1'
-import Footer2 from './footer/Footer2'
-import Footer3 from "./footer/Footer3"
-import Footer4 from "./footer/Footer4"
+import BackToTop from "../elements/BackToTop"
+import PageHeader from "./PageHeader"
+import Header from "./Header"
+import Footer from "./Footer"
 
-export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls }) {
-    const [scroll, setScroll] = useState(0)
-    // Mobile Menu
+// breadcrumbTitle: título (<h1>) del encabezado de la página.
+// pageHeader: { image, eyebrow, text, crumbs: [{ label, href }] } — foto y textos del encabezado.
+export default function Layout({ breadcrumbTitle, pageHeader, footerVariant, wrapperCls, children }) {
+    const [scroll, setScroll] = useState(false)
     const [isMobileMenu, setMobileMenu] = useState(false)
     const pathname = usePathname()
-    
-    const openMobileMenu = () => {
-      if (!isMobileMenu) {
-        setMobileMenu(true)
-        document.body.classList.add('mobile-menu-visible')
-      }
-    }
-  
-    const closeMobileMenu = () => {
-      if (isMobileMenu) {
-        setMobileMenu(false)
-        document.body.classList.remove('mobile-menu-visible')
-      } else {
-        // por si quedara “pegada” la clase tras refresh
-        document.body.classList.remove('mobile-menu-visible')
-      }
-    }
-    
-    const handleMobileMenu = () => {
-      setMobileMenu(!isMobileMenu)
-      !isMobileMenu
-        ? document.body.classList.add("mobile-menu-visible")
-        : document.body.classList.remove("mobile-menu-visible")
-    }
-    
-    // Cerrar SOLO cuando cambia la ruta
-  useEffect(() => {
-      if (isMobileMenu) closeMobileMenu()
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [pathname])
+    const [menuPath, setMenuPath] = useState(pathname)
 
-    // Al cargar/recargar la página, asegurar cerrado
+    const handleMobileMenu = () => setMobileMenu((open) => !open)
+
+    // Cerrar el menú al cambiar de ruta
+    if (menuPath !== pathname) {
+        setMenuPath(pathname)
+        setMobileMenu(false)
+    }
+
+    // La plantilla muestra el menú móvil con una clase en <body>
     useEffect(() => {
-      closeMobileMenu()
-      // (opcional) por si el navegador restaura estado en back/forward cache:
-      const handler = () => closeMobileMenu()
-      window.addEventListener('pageshow', handler)
-      return () => window.removeEventListener('pageshow', handler)
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+        document.body.classList.toggle("mobile-menu-visible", isMobileMenu)
+    }, [isMobileMenu])
+
+    // Cerrar también al restaurar la página desde back/forward cache
+    useEffect(() => {
+        const close = () => setMobileMenu(false)
+        window.addEventListener("pageshow", close)
+        return () => {
+            window.removeEventListener("pageshow", close)
+            document.body.classList.remove("mobile-menu-visible")
+        }
     }, [])
 
-    // Popup
-    const [isPopup, setPopup] = useState(false)
-    const handlePopup = () => setPopup(!isPopup)
-
-    // Sidebar
-    const [isSidebar, setSidebar] = useState(false)
-    const handleSidebar = () => setSidebar(!isSidebar)
-
     useEffect(() => {
-        const WOW = require('wowjs')
-        window.wow = new WOW.WOW({
-            live: false
-        })
+        const WOW = require("wowjs")
+        window.wow = new WOW.WOW({ live: false })
         window.wow.init()
 
-        document.addEventListener("scroll", () => {
-            const scrollCheck = window.scrollY > 100
-            if (scrollCheck !== scroll) {
-                setScroll(scrollCheck)
-            }
-        })
+        const onScroll = () => setScroll(window.scrollY > 100)
+        onScroll()
+        document.addEventListener("scroll", onScroll, { passive: true })
+        return () => document.removeEventListener("scroll", onScroll)
     }, [])
+
     return (
         <>
-            <DataBg />
-            <div className={`page-wrapper ${wrapperCls ? wrapperCls : ""}`} id="#top">
-                {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} />}
-                {headerStyle == 1 ? <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
-                {headerStyle == 2 ? <Header2 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
-                {headerStyle == 3 ? <Header3 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
+            <div className={`page-wrapper ${wrapperCls || ""}`} id="top">
+                <Header scroll={scroll} handleMobileMenu={handleMobileMenu} />
 
+                {breadcrumbTitle && <PageHeader title={breadcrumbTitle} {...pageHeader} />}
 
-                <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
-                <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
+                <main>{children}</main>
 
-                {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
-
-                {children}
-
-                {!footerStyle && < Footer1 />}
-                {footerStyle == 1 ? < Footer1 /> : null}
-                {footerStyle == 2 ? < Footer2 /> : null}
-                {footerStyle == 3 ? < Footer3 /> : null}
-                {footerStyle == 4 ? < Footer4 /> : null}
+                <Footer variant={footerVariant} />
             </div>
             <BackToTop scroll={scroll} />
         </>
