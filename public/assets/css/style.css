@@ -5112,3 +5112,23 @@ ul {
 .social-link--pending {
     cursor: pointer;
 }
+
+/* Crédito del desarrollador, al final del footer */
+.site-footer__credit {
+    position: relative;
+    margin: 0;
+    padding: 14px 0 18px;
+    border-top: 1px solid rgba(var(--erepair-white-rgb), .06);
+    font-size: 13px;
+    text-align: center;
+    color: rgba(var(--erepair-white-rgb), .55);
+}
+
+.site-footer__credit a {
+    color: rgba(var(--erepair-white-rgb), .8);
+    transition: color 300ms ease;
+}
+
+.site-footer__credit a:hover {
+    color: var(--erepair-primary);
+}

@@ -86,6 +86,9 @@ export default function Footer({ variant }) {
                             <li><Link href="/aviso-de-privacidad">Aviso de Privacidad</Link></li>
                         </ul>
                     </div>
+                    <p className="site-footer__credit">
+                        Sitio creado por <a href="https://ingeniatex.com" target="_blank" rel="noopener">ingeniatex.com</a>
+                    </p>
                 </div>
             </div>
         </footer>
